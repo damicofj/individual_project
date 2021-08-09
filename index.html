@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <!-- Blog about mechanical problems and solutions, tutorials, tips to buy a car, etc -->
 
@@ -11,7 +11,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="author" content="Francisco José D'Amico">
     <!-- Favicon -->
+    
     <!-- Chrome and Opera -->
     <link rel="icon" href="images/favicon.ico" />
     <!-- Safari -->
@@ -23,7 +25,6 @@
 
     <!-- Browser colour Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#1b1e23" />
-
     <!-- Browser colour Apple -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -33,7 +34,13 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Bootstrap CSS -->
+    <!-- Font -->
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+
+    <!-- Handlebars CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    
+    <!-- Bootstrap CDN -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -52,7 +59,7 @@
       <a class="navbar-brand mr-auto" href="index.html">
         <img
           class="logo-mobile"
-          src="images/logo-referenciarte.png"
+          src="images/logo-w2.png"
           width="190"
           height="40"
           alt=""
@@ -70,6 +77,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+      <!-- hamburguer button -->
         <div class="animated-icon2">
           <span></span><span></span><span></span><span></span>
         </div>
@@ -80,56 +88,42 @@
         id="navbarSupportedContent"
       >
         <ul class="navbar-nav text-left mr-2">
-          <!-- La palabra "active" en el class los vuelve de color blanco brilloso en vez de gris -->
           <li class="nav-item active">
-            <a class="nav-link" href="ingreso-client.html">Ingresar</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="registro-client.html">Registrarme</a>
+            <a class="nav-link" href="articles.html">Articles</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="preguntas.html">Preguntas</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="soypro.html">Soy Profesional</a>
+            <a class="nav-link" href="about.html">About Us</a>
           </li>
         </ul>
       </div>
     </nav>
+    <!-- end of NAV -->
 
-    <!-- fin NAV NUEVO -->
-
-    <title>Referenciarte - Elegí profesionales con referencias.</title>
+    <title>TravelMan Magazine - Your travel guide</title>
     <meta name="description" content="Elegí profesionales con referencias." />
   </head>
+  <!-- end of HEAD -->
 
-  <!-- FIN HEAD -->
-  <!-- INICIO BODY -->
-
+  <!-- BODY starts -->
   <body>
-    <!-- INICIO LANDING TOP -->
+    <!-- LANDING TOP starts -->
 
     <div class="landing_top">
       <div class="landing_top_1_2">
-        <h1 class="title_1">Elegí con referencias.</h1>
+        <h1 class="title_1">Find your next destination.</h1>
         <!-- También puede ser: Elegir el servicio que necesitas nunca fue más fácil / Elegí profesionales con referencias. / Elrgí profesionales con referencias. / El arte de elegir con referencias. / El arte de elegir profesionales con referencias. -->
         <h3 class="subtitle_1" id="subtitle_1_id">
-          Ellos están aquí para vos.
+          Don't you know where to go?
           <br />
-          Los mejores de cada sector.
+          We are here to help!
           <br />
-          Búscalos y comunícate gratis.
-          <!-- Ellos estan aquí para ayudarte.
-          <br />
-          Búscalos y pedí turno gratis. 
-          
-          o
-          
-          Ellos estan aquí para vos.
-          <br />
-          Búscalos y comunícate con ellos gratis.
-          
-          -->
+          <!-- idk. -->
         </h3>
       </div>
 
@@ -141,20 +135,20 @@
             <input
               type="text"
               class="form-control"
-              placeholder="¿Qué?: ej. plomero, albañil, veterinario, ..."
+              placeholder="Destination: ex. Rome"
             />
           </div>
           <div class="col-12 col-sm col-md col-lg-3">
             <input
               type="text"
               class="form-control"
-              placeholder="¿Donde?: ej. Rosario, CABA, Córdoba, ..."
+              placeholder="Season: ex. Winter"
             />
           </div>
           <!-- 
             lo que sigue dimensiones de botón
           -->
-          <div class="col col-sm-12 col-md-3 col-lg-3">
+          <div class="col col-sm-12 col-md-3 col-lg-2">
             <button
               type="submit"
               class="btn btn-block btn-lg search-button btn-danger"
@@ -162,10 +156,23 @@
               tabindex="3"
             >
               <i class="fas fa-search"></i>
-              Buscar
+              Search
+            </button>
+          </div>
+          <!-- posible boton de random article -->
+          <div class="col col-sm-12 col-md-5 col-lg-3">
+            <button
+              type="submit"
+              class="btn btn-block btn-lg search-button btn-warning"
+              title="Buscar"
+              tabindex="3"
+            >
+              <i class="fas fa-dice"></i>
+              I'm feeling lucky
             </button>
           </div>
         </div>
+        
       </form>
     </div>
 
@@ -174,7 +181,7 @@
     <!-- INICO DE MÁS BUSCADOS -->
 
     <section id="features_mas_buscados">
-      <h4 class="features_mas_buscados_title">Más buscados:</h4>
+      <h4 class="features_mas_buscados_title">Popular destinations:</h4>
 
       <!-- ICONOS -->
       <div class="row row_features_mas_buscados">
@@ -182,10 +189,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='mecanicos.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-wrench fa-4x"></i>
-            <h3 class="h3_features-box">Mecánico</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d1.jpg" alt="">
+            <h3 class="h3_features-box">Milan</h3>
           </button>
         </div>
 
@@ -193,10 +201,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='plomeros.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-faucet fa-4x"></i>
-            <h3 class="h3_features-box">Plomero</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d2.jpg" alt="">
+            <h3 class="h3_features-box">Paris</h3>
           </button>
         </div>
 
@@ -204,10 +213,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='albanil.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-hammer fa-4x"></i>
-            <h3 class="h3_features-box">Albañil</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d3.jpg" alt="">
+            <h3 class="h3_features-box">Tokyo</h3>
           </button>
         </div>
 
@@ -215,10 +225,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='contador.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-calculator fa-4x"></i>
-            <h3 class="h3_features-box">Contador</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d4.jpg" alt="">
+            <h3 class="h3_features-box">Rio</h3>
           </button>
         </div>
 
@@ -226,10 +237,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='limpieza.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-broom fa-4x"></i>
-            <h3 class="h3_features-box">Limpieza</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d5.jpg" alt="">
+            <h3 class="h3_features-box">Moscu</h3>
           </button>
         </div>
 
@@ -237,10 +249,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='veterinario.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-paw fa-4x"></i>
-            <h3 class="h3_features-box">Vet</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d6.jpg" alt="">
+            <h3 class="h3_features-box">Berlin</h3>
           </button>
         </div>
 
@@ -248,10 +261,11 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons features_buttons"
-            onclick="window.location.href='medico.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-stethoscope fa-4x"></i>
-            <h3 class="h3_features-box">Médico</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d7.jpg" alt="">
+            <h3 class="h3_features-box">London</h3>
           </button>
         </div>
 
@@ -259,21 +273,22 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='abogado.html';"
+            onclick="window.location.href='x.html';"
           >
-            <i class="icons_features fas fa-balance-scale fa-4x"></i>
-            <h3 class="h3_features-box">Abogado</h3>
+            <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
+            <img class="destination-images" src="../images/d8.jpg" alt="">
+            <h3 class="h3_features-box">NYC</h3>
           </button>
         </div>
       </div>
 
       <div class="features_ver_mas_button">
         <button
-          onclick="window.location.href='ver_mas_servicios.html';"
+          onclick="window.location.href='articles.html';"
           type="button"
           class="btn btn-lg btn-warning"
         >
-          Mostrar más
+          Show more
           <!-- <i class="fas fa-plus"></i> -->
         </button>
       </div>
@@ -285,40 +300,38 @@
       <div id="row_1" class="row">
         <div id="title_2" class="col-12 col-sm-12 col-md-6 col-lg-6">
           <h1 id="h1_title_2">
-            Contacta gratis los mejores profesionales de tu zona.
+            Acèa poner ejemplo de un articulo, puede ser de Milan
           </h1>
-          <h3 id="h3_title_2">Utilizá el buscador o descargá la App</h3>
+          <h3 id="h3_title_2">
+            Cambiar todo
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan consectetur odio vitae pretium. Curabitur elementum porta lorem, eu aliquam massa euismod ut. Nullam congue, risus sodales efficitur feugiat, tortor dolor feugiat nunc, sed eleifend lacus nunc sed ex. Donec iaculis dapibus imperdiet. Donec auctor varius tristique. Proin sit amet iaculis elit. Vestibulum nec volutpat arcu, ut egestas turpis. Curabitur velit justo, imperdiet eu mattis a, congue in sapien. Aliquam et posuere nibh, quis eleifend metus. Duis laoreet augue tortor, sit amet scelerisque eros tempor vel. Phasellus vel odio euismod, sagittis justo eu, vulputate nisi.
+
+Sed sit amet metus tempus, dictum purus sit amet, pretium velit. Nulla eget justo mi. Phasellus vel massa tellus. Fusce porta rutrum eros, ut placerat nibh porta a. Proin a libero sit amet nibh scelerisque aliquam. Phasellus iaculis purus sit amet diam fringilla ultrices. Ut et libero et nisl faucibus porta. Nam quis odio vitae ante sodales vehicula vel mollis ipsum. Proin vitae tincidunt justo, sed feugiat orci. Donec cursus augue non nisi pulvinar, eu interdum neque imperdiet. Pellentesque urna nunc, mattis sed turpis a, pulvinar pharetra nulla. In non pharetra leo, in pharetra velit. Nunc in porta dolor.
+
+Etiam ultrices tincidunt nunc nec sodales. Nam ex risus, venenatis at ornare malesuada, commodo vel lectus. Suspendisse lobortis pretium sapien ac finibus. Duis molestie sapien et tempor pharetra. Donec at felis sit amet arcu consectetur rutrum ac ac nunc. Duis a velit consequat, euismod ipsum quis, tincidunt nisl. Fusce felis nunc, elementum in accumsan eget, scelerisque id lorem. Vestibulum sem dolor, ultricies ut mi viverra, finibus sodales leo. Aliquam vitae sem dictum, dapibus neque ac, laoreet nisl. Etiam consequat dui nunc. Etiam fermentum pulvinar tristique. Aliquam fermentum mollis semper. Integer efficitur viverra velit, in laoreet nulla cursus sit amet.
+
+Quisque dapibus libero lacus, id vestibulum mi blandit a. Ut tempor nisl ac ipsum commodo, sit amet rutrum diam volutpat. Nullam imperdiet, tortor eget finibus tempus, nisl nulla feugiat nulla, at viverra nulla lorem vel mi. Mauris imperdiet efficitur iaculis. Duis non ipsum facilisis mauris rutrum dignissim vel id nunc. Maecenas volutpat scelerisque sodales. Quisque pellentesque aliquam nibh a rhoncus. Curabitur mauris neque, semper vitae mauris quis, tincidunt dignissim sapien.
+
+Etiam viverra dictum libero sollicitudin malesuada. Mauris quis dolor vitae eros porttitor scelerisque. Phasellus sed dui et justo consequat tempus. Integer neque mauris, ultrices quis porttitor sit amet, imperdiet a turpis. Suspendisse mauris leo, egestas nec ligula ac, dictum eleifend nibh. Aliquam hendrerit tincidunt risus, non blandit diam vehicula ut. Praesent vitae felis mi. Quisque bibendum mattis volutpat. Quisque efficitur, sem eu ultrices scelerisque, lacus enim sodales nisl, in ultricies nulla metus ut justo. Fusce et vehicula libero. Etiam faucibus sem nec semper rutrum. Duis ac venenatis neque. Donec accumsan diam vel ex laoreet, ut lobortis lacus faucibus. Vestibulum sed turpis vel lorem varius scelerisque.
+          </p>
           <button
-            onclick="window.location.href='https://www.apple.com/ios/app-store/';"
+            onclick="window.location.href='articles.html';"
             id="ios"
             type="button"
             class="btn btn-lg btn-danger"
           >
-            <i class="fab fa-apple"></i> Descargar
-          </button>
-          <button
-            onclick="window.location.href='https://play.google.com/store/apps/';"
-            id="android"
-            type="button"
-            class="btn btn-lg btn-danger"
-          >
-            <i class="fab fa-google-play"></i> Descargar
+            SUBSCRIBE TO READ MORE
           </button>
         </div>
         <div id="row_1_col_2" class="col-12 col-sm-12 col-md-6 col-lg-6">
-          <img src="images/iphone_6_1.png" alt="iphone-mockup" />
+          <img src="images/back-big3.jpg" alt="iphone-mockup" />
         </div>
       </div>
     </section>
 
     <!-- FIN CALL TO ACTION -->
-
-    <!-- OPCIONAL
-      imagen de maps mostrando ubicaciones de profesionales
-    <div id="row_2_col_2" class="col-12 col-sm-12 col-md-6 col-lg-6">
-      <img src="imagen de maps mostrando ubicaciones de profesionales" alt="profesionales-ubic-mockup" />
-    </div>
--->
 
     <!-- INICIO SECCIÓN DE FEATURES -->
 
@@ -326,27 +339,25 @@
       <div class="row">
         <div class="features-box col-lg-4">
           <i class="icons_features fas fa-check-circle fa-4x"></i>
-          <h3 class="h3_features-box">Fácil de usar.</h3>
+          <h3 class="h3_features-box">Easy to use.</h3>
           <p class="p_features-box">
-            Hecho para que personas de 1 a 99 años estén cómodos usándolo.
+            Created to by used by people from 1 to 99 years old.
           </p>
         </div>
 
         <div class="features-box col-lg-4">
           <i class="icons_features fas fa-bullseye fa-4x"></i>
-          <h3 class="h3_features-box">Amplia Variedad.</h3>
+          <h3 class="h3_features-box">Wide variety.</h3>
           <p class="p_features-box">
-            Las opiniones reales te van a ayudar a elegir. Nunca más te vas a
-            llevar sorpresas!
+            Our complete set of options will help you choose. All in 1 place!
           </p>
         </div>
 
         <div class="features-box col-lg-4">
           <i class="icons_features fas fa-heart fa-4x"></i>
-          <h3 class="h3_features-box">Ahora es más fácil.</h3>
+          <h3 class="h3_features-box">Made with love.</h3>
           <p class="p_features-box">
-            Buscar a alguien apto ya no es más una tarea imposible. Ni se pierde
-            más tiempo.
+            Made by experienced travellers to our fellows. The best articles are here.
           </p>
         </div>
         <!-- Encontra todo lo que necesitas en nuestra plataforma. -->
@@ -378,39 +389,36 @@
             alt="First slide"
           >
             <h4 class="testimonial-text">
-              "Ya no me clavan más los electricistas al poder ver las reviews.
-              No lo puedo creer todavía"
+              "No more suprises when I travel, now I can plan everything in advance."
             </h4>
             <img
               class="testimonials_images"
-              src="images/she.jpg"
-              alt="dog-profile"
+              src="images/person1.jpg"
+              alt="Person 1 profile"
             />
             <em>Rosario, Santa Fe</em>
           </div>
           <div class="carousel_testimonials carousel-item" alt="Second slide">
             <h4 class="testimonial-text">
-              "Los mecánicos no se me abusan más con los precios. Unos genios
-              totales. Gracias por existir!"
+              "Travelling has never been easier. Real geniuses. Thanks for existing guys!"
             </h4>
             <img
               class="testimonials_images"
-              src="images/lady-img.jpg"
-              alt="lady-profile"
+              src="images/person2.jpg"
+              alt="Person 2 profile"
             />
-            <em>CABA, Buenos Aires</em>
+            <em>London, England</em>
           </div>
           <div class="carousel_testimonials carousel-item" alt="Third slide">
             <h4 class="testimonial-text">
-              "Siempre lo necesité. La mejor herramienta a la hora de contratar
-              cualquier servicio"
+              "I always needed this. The best magazine to suscribe for the frequent traveller."
             </h4>
             <img
               class="testimonials_images"
-              src="images/me_1.jpg"
-              alt="man-profile"
+              src="images/person3.jpg"
+              alt="Person 3 profile"
             />
-            <em>Ushuaia, Tierra del Fuego</em>
+            <em>Prague, Vienna</em>
           </div>
         </div>
 
@@ -443,93 +451,22 @@
 
     <!-- Fin Slide Testimonials -->
 
-    <!-- Prueba Testimonials s/Slide
-    <section id="testimonials">
-
-        <div
-          class="carousel_testimonials"
-        >
-          <h4 class="testimonial-text">
-            "Ya no me clavan más los electricistas al poder ver las reviews.
-            No lo puedo creer todavía"
-          </h4>
-          <img
-            class="testimonials_images"
-            src="images/dog-img.jpg"
-            alt="dog-profile"
-          />
-          <em>Rosario, Santa Fe</em>
-        </div>
-
-        <div class="carousel_testimonials">
-          <h4 class="testimonial-text">
-            "Los mecánicos no se me abusan más con los precios. Unos genios
-            totales!"
-          </h4>
-          <img
-            class="testimonials_images"
-            src="images/lady-img.jpg"
-            alt="lady-profile"
-          />
-          <em>CABA, Buenos Aires</em>
-        </div>
-
-        <div class="carousel_testimonials">
-          <h4 class="testimonial-text">
-            "Siempre lo necesité. La mejor herramienta a la hora de contratar
-            cualquier servicio"
-          </h4>
-          <img
-            class="testimonials_images"
-            src="images/me_1.jpg"
-            alt="man-profile"
-          />
-          <em>Ushuaia, Tierra del Fuego</em>
-        </div>
-
-    </section>
-
-    Fin de prueba testimonios sin slide -->
-
-    <!-- Inicio PRENSA -->
-
-    <section id="press">
-      <img class="press_logo" src="images/tn.png" alt="tn-logo" />
-      <img class="press_logo" src="images/lanacion.png" alt="lanacion-logo" />
-      <img class="press_logo" src="images/telefe.png" alt="telefe-logo" />
-      <img class="press_logo" src="images/eltres.png" alt="eltres-logo" />
-    </section>
-
-    <!-- Fin Prensa -->
-
-    <!-- inicio CALL TO ACTION SOS PROFESIONAL -->
-    <!-- recordar: ex pricing que paso a página de soyprofesional, por eso le quedó el id -->
-    <!-- ambas comparte código -->
-
     <section id="pricing">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h3 class="plan_pricing_h3">Sos Profesional?</h3>
+        <h3 class="plan_pricing_h3">Want our top travel stories delivered straight to your inbox?</h3>
         <p class="lead plan_pricing_p">
-          Para que puedas llevar tu trabajo al siguiente nivel te traemos un
-          plan acorde a cada necesidad.
+          Sing up to out newsletter.
         </p>
 
         <button
           type="button"
           class="btn btn-lg btn-warning"
-          onclick="window.location.href='soypro.html';"
+          onclick="window.location.href='articles.html';"
         >
-          Unirme
+         Sign Up <i class="fas fa-inbox"></i>
         </button>
       </div>
     </section>
-
-    <!-- Footer
-
-    <footer id="footer">
-      <p>© Copyright 2020 Referenciarte</p>
-    </footer>
-  -->
 
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4">
@@ -541,12 +478,12 @@
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="mb-4">
               <!-- text-uppercase mb-4 font-weight-bold -->
-              referenciarte.com
+              travelman.com
             </h6>
             <p>
-              Elegir el servicio que necesitas nunca fue más fácil.
+              Choosing has never been easier.
               <br />
-              Ahora tenes las referencias, que nada te detenga.
+              Now you have the knowledge you needed, nothing can stop you.
             </p>
           </div>
           <!-- Grid column -->
@@ -557,20 +494,15 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Info</h6>
             <p>
-              <a href="contacto.html">Contacto</a>
+              <a href="contact.html">Contact</a>
             </p>
             <p>
-              <a href="quienes-somos.html">Quienes Somos</a>
+              <a href="about.html">About Us</a>
             </p>
             <p>
-              <a href="legales.html">Legales</a>
+              <a href="legal.html">Legal</a>
             </p>
-            <p>
-              <a href="privacidad.html">Privacidad</a>
-            </p>
-            <p>
-              <a href="tyc.html">Términos y Condiciones</a>
-            </p>
+
           </div>
           <!-- Grid column -->
 
@@ -578,21 +510,12 @@
 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+            <h6 class="text-uppercase mb-4 font-weight-bold">Shortcuts</h6>
             <p>
-              <a href="ingreso-client.html">Ingreso</a>
+              <a href="index.html">Index</a>
             </p>
             <p>
-              <a href="registro-client.html">Registrarme como Usuario</a>
-            </p>
-            <p>
-              <a href="registro-pro.html">Registrarme como Profesional</a>
-            </p>
-            <p>
-              <a href="preguntas.html">Preguntas</a>
-            </p>
-            <p>
-              <a href="ayuda.html">Ayuda</a>
+              <a href="articles.html">Articles</a>
             </p>
           </div>
 
@@ -601,11 +524,10 @@
 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p><i class="fas fa-home mr-3"></i> Rosario, CP 2000, AR</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@referenciarte.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 54 9 341 2586789</p>
-            <p><i class="fas fa-print mr-3"></i> + 54 9 341 4398157</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@travelman.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 54 9 341 2345678</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -619,9 +541,9 @@
           <div class="col-md-7 col-lg-8">
             <!--Copyright-->
             <p class="text-center text-md-left">
-              © 2020 Copyright:
+              © 2021 Copyright:
               <a href="https://referenciarte.com/">
-                <strong> www.referenciarte.com</strong>
+                <strong> www.travelman.com</strong>
               </a>
             </p>
           </div>

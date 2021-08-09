@@ -1,3 +1,719 @@
-h1 {
-    color: red;    
-}
+/*  de colorhubnt
+#162447;
+*/
+
+/* COLORES MÁS USADOS:
+AZUL BRILLANTE (el que usaba para
+todo el body: #162447;
+AZUL MIX GRIS: #3a79f0; */
+/* color: #3a79f0; */
+/* color: #162447; #1b1e23 */
+/* color de títulos #0d40c4 */
+
+/* INICIO TARGET POR: ELEMENTO */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+body {
+    background-color: #1b1e23; /*#162447;*/
+    color: white;
+    font-family: "Segoe UI", "Bitstream Vera Sans", "DejaVu Sans", "Trebuchet MS",
+      Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+  }
+  /* -webkit-appearance: none !important;
+  -moz-appearance: none;
+  appearance: none; */
+  
+  /*#162447 #1582ff #1572fd #0084ff */
+  
+  form {
+    padding: 10px;
+    margin: 0 0 60px 0;
+  }
+  
+  footer {
+    background-color: white;
+    color: #1b1e23;
+  }
+  
+  footer a {
+    color: #1b1e23;
+  
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 8vw;
+    font-weight: bold;
+  }
+  
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 6vw;
+  }
+  @media screen and (min-width: 500px) {
+    h3 {
+      font-size: 28px;
+    }
+  }
+  
+  input {
+    margin: 0 0 9px 0;
+  }
+  @media screen and (max-width: 600px) {
+    input {
+      margin: 0 0 9px 0;
+    }
+  }
+  
+  img[alt="iphone-mockup"] {
+    width: 60%;
+    max-width: 300px;
+  }
+  
+  img[alt="profesionales-mockup"] {
+    background-color: #1b1e23;
+    width: 100%;
+  }
+  
+  /* INICIO TARGET POR: CLASS */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  
+  /* TOGGLER BOTON CON ANIMACIONES */
+  /* Icon 1 */
+  
+  .animated-icon1,
+  .animated-icon2,
+  .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .animated-icon1 span,
+  .animated-icon2 span,
+  .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .animated-icon1 span {
+    background: #e65100;
+  }
+  
+  .animated-icon2 span {
+    background: #e3f2fd;
+  }
+  
+  .animated-icon3 span {
+    background: #f3e5f5;
+  }
+  
+  .animated-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .animated-icon1 span:nth-child(2) {
+    top: 10px;
+  }
+  
+  .animated-icon1 span:nth-child(3) {
+    top: 20px;
+  }
+  
+  .animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  .animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  /* Icon 3*/
+  
+  .animated-icon2 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .animated-icon2 span:nth-child(2),
+  .animated-icon2 span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .animated-icon2 span:nth-child(4) {
+    top: 20px;
+  }
+  
+  .animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  /* Icon 4 */
+  
+  .animated-icon3 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  .animated-icon3 span:nth-child(3) {
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  .animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+  }
+  
+  .animated-icon3.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .animated-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 8px;
+  }
+  
+  .navbar-toggler {
+    border-color: transparent !important;
+  }
+  
+  .navbar-toggler-white {
+    color: white;
+    font-size: 1.5rem;
+  }
+  /* fin TOGGLER BOTON CON ANIMACIONES */
+  
+  
+  .bg-color {
+    background-color: #1b1e23;
+    color: white;
+  }
+  
+  .btn-buscar-navbar {
+    border-radius: 100%;
+    text-align: center;
+    display: none;
+  }
+  /* A MOMENTO LO DEJO EN DISPLAY NONE PORQUE ES EL BUSCADOR PRINCIPAL PERO EN TODAS LAS OTRAS PÁGINAS TIENE QUE ESTAR */
+  
+  .btn-font-black {
+    color: black;
+  }
+  
+  /* .btn-geo-navbar {
+    border-radius: 100%;
+  } */
+  
+  .card-deck {
+    color: black;
+  }
+  
+  /* .card_border {
+    border-width: 3px;
+    border-color: #3a79f0;
+  } */
+  
+  /* iconos de carousel forzados */
+  
+  /* .carousel-control-next-icon:after {
+    content: "⏵";
+    font-size: 30px;
+    color: #3a79f0;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: "⏴";
+    font-size: 30px;
+    color: #3a79f0;
+  } */
+  
+  .carousel_testimonials {
+    background-color: white;
+    color: #1b1e23;
+    padding: 40px 10px;
+  }
+  
+  /* carousel icons background image */
+  
+  /* .carousel-control-prev {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233a79f0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .carousel-control-next {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233a79f0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+  
+  .carousel-indicators li {
+    background-color: #1b1e23;
+  }
+  
+  .features-box {
+    padding: 1%;
+    /* padding: 5%; */
+  }
+  @media screen and (min-width: 575px) {
+    .features-box {
+      padding: 1%;
+      /* padding: 2.5%; */
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .features-box {
+      padding: 1%;
+      /* padding: 3%; */
+    }
+  }
+  
+  .features_mas_buscados_title {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 0 0 30px 0;
+  }
+  @media screen and (min-width: 750px) {
+    .features_mas_buscados_title {
+      font-size: 2rem;
+      margin: 50px 0 0 0;
+    }
+  }
+  
+  .features_buttons {
+    width: 100%;
+    height: 100%;
+    border-color: grey;
+  }
+  
+  .features_ver_mas_button {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 750px) {
+    .features_ver_mas_button {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+  }
+  
+  .form-control {
+    height: 48px;
+  }
+  @media screen and (max-width: 600px) {
+    .form-control {
+      height: 48px;
+    }
+  }
+  
+  /* revisar si conviene usar min-width */
+  .form-row {
+    background: #00000010;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 950px;
+  }
+  /* el minimo que se recomienda usar es 320px*/
+  @media screen and (max-width: 600px) {
+    .form-row {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    .form-row {
+      background: #00000020;
+      margin: 0 10px 0 50px;
+      text-align: left;
+    }
+  }
+  
+  .h3_features-box {
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+  }
+  
+  .icons_features {
+    margin-bottom: 1rem;
+  }
+  .icons_features:hover {
+    color: lightskyblue;
+  }
+
+  .destination-images {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .nav-item {
+    text-align: left;
+  }
+  
+  .navbar-brand {
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+      "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navbar-toggler-icon {
+    color: white;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .nomobile {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 641px) {
+    .mobile {
+      display: none;
+    }
+  }
+  
+  /* .navbar-form {
+    width: 130px;
+  } */
+  
+  .landing_top {
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+  }
+  
+  .landing_top {
+    background-image: url(../images/back-small.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+  }
+  @media screen and (min-width: 1050px) {
+    .landing_top {
+      background-image: url(../images/back-big4.jpg);
+      /* background-repeat: no-repeat; */
+      /* background-position-x: right; */
+      /* background-position-y: bottom; */
+      /* background-size: contain; */
+      /* height: 650px; */
+      background-size: cover;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .landing_top {
+      height: 650px;
+    }
+  }
+  
+  .p_features-box {
+    /* color: #3a79f0; */
+    color: white;
+  }
+  
+  .plan_pricing_h3 {
+    font-size: 2rem;
+    font-style: normal;
+    /* font-weight: 200; */
+    margin: 30px auto 20px auto;
+  }
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  
+  .plan_pricing_p {
+    font-style: normal;
+    /* font-weight: 300; */
+    margin: 0 auto 30px auto;
+    max-width: 500px;
+  }
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  
+  .press_logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
+  @media screen and (max-width: 600px) {
+    .press_logo {
+      width: 35%;
+    }
+  }
+  
+  .row_features_mas_buscados {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .subtitle_1 {
+    margin: auto;
+    opacity: 1;
+    padding: 0px 50px 50px 50px;
+  }
+  @media screen and (max-width: 600px) {
+    .subtitle_1 {
+      margin: auto;
+      padding: 0px 15px 15px 15px;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    .subtitle_1 {
+      margin: 0 10px 0 10px;
+      text-align: left;
+      width: 400px;
+      /* text-shadow: black 1px 1px; */
+    }
+  }
+  
+  .testimonials_images {
+    width: 15%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  @media screen and (min-width: 600px) {
+    .testimonials_images {
+      width: 10%;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .testimonials_images {
+      width: 7%;
+    }
+  }
+  
+  .title_1 {
+    max-width: 700px;
+    margin: auto;
+    padding: 50px 50px 30px 50px;
+  }
+  @media screen and (max-width: 500px) {
+    .title_1 {
+      font-size: 30px;
+      margin: auto;
+      padding: 80px 30px 25px 30px;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .title_1 {
+      font-size: 30px;
+      margin: auto;
+      padding: 90px 60px 25px 60px;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .title_1 {
+      font-size: 40px;
+      margin: auto;
+      padding: 100px 50px 25px 50px;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    .title_1 {
+      font-size: 60px;
+      margin: 0 10px 0 10px;
+      text-align: left;
+      width: 500px;
+      /* text-shadow: black 1px 0.5px; */
+    }
+  }
+  
+  /* INICIO TARGET POR: ID */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  
+  #android {
+    color: white;
+    margin: 0 5px 0 0;
+  }
+  
+  #features {
+    background-color: #1b1e23;
+    color: white;
+    padding: 7% 15%;
+  }
+  
+  #features_mas_buscados {
+    background-color: #1b1e23;
+    color: white;
+    padding: 1% 1%;
+  }
+  
+  @media screen and (min-width: 400px) {
+    #h1_title_2 {
+      font-size: 35px;
+    }
+  }
+  
+  #h3_title_2 {
+    margin: 30px 0 40px 0;
+  }
+  
+  #ios {
+    color: white;
+    margin: 0 0 0 5px;
+  }
+  
+  /* #card_precio_profesional {
+    background-color: #e0a800;
+    color: white;
+  } */
+  
+  #press {
+    padding-bottom: 3%;
+    background-color: white;
+  }
+  
+  #pricing {
+    background-color: #1b1e23;
+    color: white;
+    padding-bottom: 5%;
+  }
+  
+  #row_1 {
+    padding: 40px 0 100px 0;
+  }
+  
+  #testimonials {
+    padding: 7% 15%;
+    background-color: white;
+  }
+  @media screen and (max-width: 600px) {
+    #testimonials {
+      padding: 3% 5%;
+    }
+  }
+  
+  #title_2 {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 20px 50px 50px;
+  }
+  @media screen and (max-width: 600px) {
+    #title_2 {
+      padding: 40px 15px 40px 15px;
+    }
+  }
+  
+  #row_1 {
+    background-color: white;
+    color: #1b1e23;
+    margin: 0;
+  }
+  
+  #row_2_col_2 {
+    padding: 0;
+  }
+  
