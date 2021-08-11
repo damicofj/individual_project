@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Blog about mechanical problems and solutions, tutorials, tips to buy a car, etc -->
+
+  <!-- HEAD STARTS -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Francisco José D'Amico">
+    <!-- Favicon -->
+    
+    <!-- Chrome and Opera -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- Safari -->
+    <link rel="apple-touch-icon" href="images/favicon.ico" />
+    <!-- Internet explorer and Windows phone -->
+    <meta name="msapplication-square70x70logo" content="images/favicon.ico" />
+    <meta name="msapplication-square150x150logo" content="images/favicon.ico" />
+    <meta name="msapplication-wide310x150logo" content="images/favicon.ico" />
+
+    <!-- Browser colour Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#1b1e23" />
+    <!-- Browser colour Apple -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/88247941eb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font -->
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+
+    <!-- Handlebars CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style1.css" />
+
+    <!-- NAVBAR -->
+
+    <!-- Referenciarte Logo PC/Mobile-->
+    <nav
+      class="navbar navbar-expand-md bg-color navbar-dark justify-content-end"
+    >
+      <a class="navbar-brand mr-auto" href="index.html">
+        <img
+          class="logo-mobile"
+          src="images/logo-w2.png"
+          width="190"
+          height="40"
+          alt=""
+          loading="lazy"
+        />
+      </a>
+
+      <!-- Hamburguer button -->
+      <button
+        class="navbar-toggler second-button ml-auto mr-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent23"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+      <!-- hamburguer button -->
+        <div class="animated-icon2">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </button>
+
+      <div
+        class="collapse navbar-collapse flex-grow-0"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav text-left mr-2">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of NAV -->
+
+    <title>TravelMan Magazine - Your travel guide</title>
+    <meta name="description" content="Elegí profesionales con referencias." />
+  </head>
+  <!-- end of HEAD -->
+
+  <!-- BODY starts -->
+  <body>
+
+    <!-- Contact Us Section -->
+   <section class="Material-contact-section">
+    <div class="container">
+      <div class="row">
+        <!-- Section Titile -->
+        <div class="col-md-12 wow animated fadeInLeft">
+          <h1 class="section-title contact-title">We would love hearing from you!</h1>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Section Titile -->
+        <div
+          class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft text-left mt-5 mb-auto"
+        >
+          <p>
+            You can contact us by any of these means or leave your message completing the survey.
+            <br />
+            We will answer it as soon as possible.
+          </p>
+
+          <div class="find-widget">
+            Company:
+            <a href="https://travelman.com">TravelMan Corp.</a>
+          </div>
+          <div class="find-widget">
+            Address: <a href="#">Montevideo 3841, Rosario, CP 2000, AR</a>
+          </div>
+          <div class="find-widget">
+            Telephone: <a href="#">+ 54 9 341 2345678</a>
+          </div>
+          <div class="find-widget">
+            Email: <a href="#">info@travelman.com</a>
+          </div>
+
+          <div class="find-widget">
+            Web site:
+            <a href="https://travelman.com">https://travelman.com</a>
+          </div>
+          <div class="find-widget">
+            Hours: <a href="#">Mon to Fri: 08:00 AM - 20:00 PM</a>
+          </div>
+        </div>
+        <!-- contact form -->
+        <div class="col-md-6 wow animated fadeInRight text-left">
+          <form
+            class="shake"
+            role="form"
+            method="post"
+            id="contactForm"
+            name="contact-form"
+            data-toggle="validator"
+          >
+            <!-- Name -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="name">Name</label>
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                name="name"
+                required
+                data-error="Please enter your name"
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- email -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="email">Email</label>
+              <input
+                class="form-control"
+                id="email"
+                type="email"
+                name="email"
+                required
+                data-error="Please enter your email"
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Subject -->
+            <div class="form-group label-floating">
+              <label class="control-label">Subject</label>
+              <input
+                class="form-control"
+                id="msg_subject"
+                type="text"
+                name="subject"
+                required
+                data-error="Please enter your subject"
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Message -->
+            <div class="form-group label-floating">
+              <label for="message" class="control-label">Message</label>
+              <textarea
+                class="form-control"
+                rows="3"
+                id="message"
+                name="message"
+                required
+                data-error="Please enter your message"
+              ></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Form Submit -->
+            <div class="form-submit mt-5">
+              <button
+                class="btn btn-outline-primary"
+                type="submit"
+                id="form-submit"
+              >
+                <i class="material-icons mdi mdi-message-outline"></i> Send Message
+              </button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <hr \>
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="mb-4">
+              <!-- text-uppercase mb-4 font-weight-bold -->
+              travelman.com
+            </h6>
+            <p>
+              Choosing has never been easier.
+              <br />
+              Now you have the knowledge you needed, nothing can stop you.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Info</h6>
+            <p>
+              <a href="contact.html">Contact</a>
+            </p>
+            <p>
+              <a href="about.html">About Us</a>
+            </p>
+            <p>
+              <a href="legal.html">Legal</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Shortcuts</h6>
+            <p>
+              <a href="index.html">Index</a>
+            </p>
+            <p>
+              <a href="articles.html">Articles</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Rosario, CP 2000, AR</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@travelman.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 54 9 341 2345678</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+
+        <hr />
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+            <!--Copyright-->
+            <p class="text-center text-md-left">
+              © 2021 Copyright:
+              <a href="https://referenciarte.com/">
+                <strong> www.travelman.com</strong>
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    class="btn-floating btn-sm rgba-white-slight mx-1"
+                    href="#"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    class="btn-floating btn-sm rgba-white-slight mx-1"
+                    href="#"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    class="btn-floating btn-sm rgba-white-slight mx-1"
+                    href="#"
+                  >
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    class="btn-floating btn-sm rgba-white-slight mx-1"
+                    href="#"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    class="btn-floating btn-sm rgba-white-slight mx-1"
+                    href="#"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my JS JavaScript -->
+
+    <script src="scripts/script-inicio-client.js" charset="utf-8"></script>
+
+    <!-- FIN JavaScript -->
+  </body>
+</html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
