@@ -636,6 +636,30 @@ body {
     padding: 80px 0 80px 0;
   }
 
+  .features-small-item {
+    color: #1b1e23;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .features-small-item .icon {
+    background-color: white; 
+    padding-bottom: 30px;
+  }
   /* INICIO TARGET POR: ID */
   /*  */
   /*  */
