@@ -1,26 +1,3 @@
-/*  de colorhubnt
-#162447;
-*/
-
-/* COLORES MÁS USADOS:
-AZUL BRILLANTE (el que usaba para
-todo el body: #162447;
-AZUL MIX GRIS: #3a79f0; */
-/* color: #3a79f0; */
-/* color: #162447; #1b1e23 */
-/* color de títulos #0d40c4 */
-
-/* INICIO TARGET POR: ELEMENTO */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 body {
     background-color: #1b1e23; /*#162447;*/
     color: white;
@@ -28,11 +5,6 @@ body {
       Verdana, "Verdana Ref", sans-serif;
     text-align: center;
   }
-  /* -webkit-appearance: none !important;
-  -moz-appearance: none;
-  appearance: none; */
-  
-  /*#162447 #1582ff #1572fd #0084ff */
   
   form {
     padding: 10px;
@@ -85,6 +57,8 @@ body {
     background-color: #1b1e23;
     width: 100%;
   }
+
+
   
   /* INICIO TARGET POR: CLASS */
   /*  */
@@ -630,6 +604,10 @@ body {
   .Material-contact-section {
     background-color: white;
     color: #1b1e23;
+  }
+
+  .Material-contact-section a {
+    color: #ff0019;
   }
 
   .contact-title {
