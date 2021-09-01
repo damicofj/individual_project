@@ -803,3 +803,31 @@ body {
 .openButton:hover {
   opacity: 1;
 }
+
+
+/* Articles DOm manipuated page*/
+#articles-section {
+  background-color: white; 
+  color: black;
+}
+
+#articles-section h1 {
+  padding: 3rem;
+}
+
+#articles-div .articles-row {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #99999979;
+  padding: 2rem 0;
+}
+
+#articles-div .articles-img img {
+  width: 100%; 
+  max-width: 200px;
+}
+
+#articles-div .articles-text h3 {
+  padding: 0 0 1rem 0;
+}
+
