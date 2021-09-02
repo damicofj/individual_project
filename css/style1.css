@@ -499,7 +499,8 @@ body {
     background-position-y: center;
     background-size: contain;
   }
-  @media screen and (min-width: 1050px) {
+  /* @media screen and (min-width: 1050px) { */
+    @media screen {
     .landing_top {
       background-image: url(../images/back-big4.jpg);
       /* background-repeat: no-repeat; */
