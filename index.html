@@ -131,14 +131,14 @@
 
       <form>
         <div class="form-row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
             <input
               type="text"
               class="form-control"
               placeholder="Destination: ex. Rome"
             />
           </div>
-          <div class="col-12 col-sm col-md col-lg-3">
+          <div class="col-12 col-sm-12 col-md col-lg">
             <input
               type="text"
               class="form-control"
@@ -148,7 +148,7 @@
           <!-- 
             lo que sigue dimensiones de botón
           -->
-          <div class="col col-sm-12 col-md-3 col-lg-2">
+          <div class="col col-sm-6 col-md-4 col-lg-3">
             <button
               type="submit"
               class="btn btn-block btn-lg search-button btn-danger"
@@ -160,7 +160,7 @@
             </button>
           </div>
           <!-- posible boton de random article -->
-          <div class="col col-sm-12 col-md-5 col-lg-3">
+          <div class="col col-sm-6 col-md-4 col-lg-3">
             <button
               type="submit"
               class="btn btn-block btn-lg search-button btn-warning"
@@ -168,7 +168,7 @@
               tabindex="3"
             >
               <i class="fas fa-dice"></i>
-              I'm feeling lucky
+              Random
             </button>
           </div>
         </div>
@@ -325,14 +325,24 @@
       </article>
       </div>
 
-      <button
-            onclick="window.location.href='articles.html';"
-            id="ios"
-            type="button"
-            class="btn btn-lg btn-danger"
-          >
-            SUBSCRIBE TO READ MORE
-          </button>
+      <div class="openBtn">
+        <button type="button" class="btn btn-lg btn-danger openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button>
+        <!-- <button class="openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button> -->
+        <!-- <button onclick="window.location.href='articles.html';" id="ios" type="button" class="btn btn-lg btn-danger" > SUBSCRIBE TO READ MORE </button> -->
+      </div>
+      <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="/action_page.php" class="formContainer">
+            <h2>Newsletter</h2>
+            <label for="email">
+              <strong>Subscribe to to keep up to date on the latest travel information.</strong>
+            </label>
+            <input type="text" id="email" placeholder="Your Email" name="email" required>
+            <button type="submit" class="btn">Subscribe</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
       
       <style>
       @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
@@ -617,7 +627,7 @@
         <button
           type="button"
           class="btn btn-lg btn-warning"
-          onclick="window.location.href='articles.html';"
+          onclick="openForm()"
         >
          Sign Up <i class="fas fa-inbox"></i>
         </button>
@@ -781,7 +791,7 @@
 
     <!-- my JS JavaScript -->
 
-    <script src="scripts/script-inicio-client.js" charset="utf-8"></script>
+    <script src="scripts/script1.js" charset="utf-8"></script>
 
     <!-- FIN JavaScript -->
   </body>
