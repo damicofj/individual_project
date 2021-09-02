@@ -288,46 +288,11 @@ body {
     color: black;
   }
   
-  /* .card_border {
-    border-width: 3px;
-    border-color: #3a79f0;
-  } */
-  
-  /* iconos de carousel forzados */
-  
-  /* .carousel-control-next-icon:after {
-    content: "⏵";
-    font-size: 30px;
-    color: #3a79f0;
-  }
-  
-  .carousel-control-prev-icon:after {
-    content: "⏴";
-    font-size: 30px;
-    color: #3a79f0;
-  } */
-  
   .carousel_testimonials {
     background-color: white;
     color: #1b1e23;
     padding: 40px 10px;
   }
-  
-  /* carousel icons background image */
-  
-  /* .carousel-control-prev {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233a79f0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel-control-next {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233a79f0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-    width: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-  } */
   
   .carousel-indicators li {
     background-color: #1b1e23;
@@ -365,7 +330,7 @@ body {
   .features_buttons {
     width: 100%;
     height: 100%;
-    border-color: grey;
+    border-color: transparent;
   }
   
   .features_ver_mas_button {
@@ -456,33 +421,16 @@ body {
     }
   }
   
-  /* .navbar-form {
-    width: 130px;
-  } */
-  
   .landing_top {
     height: 100%;
     margin: 0;
     padding: 0 0 0 0;
   }
-  
-  /* .landing_top {
-    background-image: url(../images/back-small.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: contain;
-<<<<<<< HEAD
-  }
+
   /* @media screen and (min-width: 1050px) { */
     @media screen {
     .landing_top {
       background-image: url(../images/back-big4.jpg);
-      /* background-repeat: no-repeat; */
-      /* background-position-x: right; */
-      /* background-position-y: bottom; */
-      /* background-size: contain; */
-      /* height: 650px; */
       background-size: cover;
       width: 100%;
     }
@@ -527,6 +475,10 @@ body {
   .row_features_mas_buscados {
     max-width: 100%;
     margin: auto;
+  }
+  
+  .row_features_mas_buscados button {
+    color: #1b1e23;
   }
   
   .subtitle_1 {
@@ -746,15 +698,7 @@ body {
   /* display: flex; */
   justify-content: left;
 }
-/* .openButton {
-  border: none;
-  border-radius: 5px;
-  background-color: #1c87c9;
-  color: white;
-  padding: 14px 20px;
-  cursor: pointer;
-  position: fixed;
-} */
+
 .loginPopup {
   position: relative;
   text-align: center;
