@@ -13,19 +13,12 @@ request.send(null);
 var articles_JSON_object = JSON.parse(request.responseText);
 
 // HTML DOM manipulator
-// for (var i = 0; i < articles_JSON_object.destinations.length; i++) {
-//     console.log(articles_JSON_object.destinations[i].destinationName);
-//     console.log(articles_JSON_object.destinations[i].destinationImg);
-//     console.log(articles_JSON_object.destinations[i].destinationData);
-// }
-
-
 var request = new XMLHttpRequest();
 request.open("GET", "scripts/articles.json", false);
 request.send(null);
 var articles_JSON_object = JSON.parse(request.responseText);
 
-for (var i = 0; i < articles_JSON_object.destinations.length; i++) {
+function articlesCreator(i) {
   // create each div for the destination with class "row articles"
   var divmain = document.createElement('div');
   divmain.className = "row articles-row " + i;
@@ -61,4 +54,14 @@ for (var i = 0; i < articles_JSON_object.destinations.length; i++) {
   var art = document.getElementById("articles-div");
 
   art.appendChild(divmain);
+}
+
+// creating first article (with different button, it goes to an actual articles, 
+// the others are just available to the people that decide to subscribe ?)
+
+// o lo mas logico seria crearlo sin la function creadora, es decir, a mano
+articlesCreator(0);
+
+for (var i = 1; i < articles_JSON_object.destinations.length; i++) {
+  articlesCreator(i);
 }
