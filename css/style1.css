@@ -8,7 +8,7 @@ body {
   
   form {
     padding: 10px;
-    margin: 0 0 60px 0;
+    margin: 0 0 0 0;
   }
   
   footer {
@@ -24,7 +24,7 @@ body {
   h1 {
     margin: 0;
     padding: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   
@@ -765,6 +765,7 @@ body {
   color: black; 
   border: 2px solid #99999979;
   padding: 2rem 0;
+  margin: 0;
 }
 
 #articles-div .articles-img img {

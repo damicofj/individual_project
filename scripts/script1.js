@@ -44,6 +44,7 @@ function articlesCreator(i) {
   var btnmain = document.createElement('button');
   btnmain.className = "btn btn-danger";
   btnmain.innerText = "Read More"; 
+  btnmain.setAttribute("onclick", articles_JSON_object.destinations[i].destinationBtn);
   
   divtext.appendChild(h3main);
   divtext.appendChild(pmain);
@@ -58,16 +59,8 @@ function articlesCreator(i) {
   art.appendChild(divmain);
 }
 
-// creating first article (with different button, it goes to an actual articles, 
-// the others are just available to the people that decide to subscribe ?)
-
-// o lo mas logico seria crearlo sin la function creadora, es decir, a mano
-// primera 
-
-firstArticleCreator();
-
 // el resto
-for (var i = 1; i < articles_JSON_object.destinations.length; i++) {
+for (var i = 0; i < articles_JSON_object.destinations.length; i++) {
   articlesCreator(i);
 }
 

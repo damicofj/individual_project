@@ -114,7 +114,7 @@
   <body>
     <!-- LANDING TOP starts -->
 
-    <div class="landing_top">
+    <div class="landing_top pb-5">
       <div class="landing_top_1_2">
         <h1 class="title_1">Find your next destination.</h1>
         <!-- También puede ser: Elegir el servicio que necesitas nunca fue más fácil / Elegí profesionales con referencias. / Elrgí profesionales con referencias. / El arte de elegir con referencias. / El arte de elegir profesionales con referencias. -->
@@ -149,20 +149,22 @@
             lo que sigue dimensiones de botón
           -->
           <div class="col col-sm-6 col-md-4 col-lg-3">
+            <!-- type="submit" -->
             <button
-              type="submit"
+              onclick="window.location.href='articles.html';"
               class="btn btn-block btn-lg search-button btn-danger"
               title="Buscar"
               tabindex="3"
-            >
+              >
               <i class="fas fa-search"></i>
               Search
             </button>
           </div>
           <!-- posible boton de random article -->
           <div class="col col-sm-6 col-md-4 col-lg-3">
+            <!-- type="submit" -->
             <button
-              type="submit"
+              onclick="window.location.href='articles.html';"
               class="btn btn-block btn-lg search-button btn-warning"
               title="Buscar"
               tabindex="3"
@@ -180,7 +182,7 @@
     <!-- INICO DE MÁS BUSCADOS -->
 
     <section id="features_mas_buscados">
-      <h4 class="features_mas_buscados_title">Popular destinations:</h4>
+      <h4 class="features_mas_buscados_title mt-5">Popular destinations:</h4>
 
       <!-- ICONOS -->
       <div class="row row_features_mas_buscados">
@@ -188,7 +190,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d1.jpg" alt="">
@@ -200,7 +202,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d2.jpg" alt="">
@@ -212,7 +214,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d3.jpg" alt="">
@@ -224,7 +226,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d4.jpg" alt="">
@@ -236,7 +238,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d5.jpg" alt="">
@@ -248,7 +250,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d6.jpg" alt="">
@@ -260,7 +262,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d7.jpg" alt="">
@@ -272,7 +274,7 @@
           <button
             type="button"
             class="btn btn-outline-light features_buttons"
-            onclick="window.location.href='x.html';"
+            onclick="window.location.href='articles.html';"
           >
             <!-- <i class="icons_features fas fa-wrench fa-4x"></i> -->
             <img class="destination-images" src="../images/d8.jpg" alt="">
@@ -294,7 +296,7 @@
     </section>
     <!-- FIN MÁS BUSCADOS -->
 
-    <section class="pb-5">
+    <section>
       <div id="app">
         <header class="article-header">
           <div class="article-header-text">
@@ -319,29 +321,31 @@
             <p>Scrooge knew he was dead? Of course he did. How could it be otherwise? Scrooge and he were partners for I don’t know how many years. Scrooge was his sole executor, his sole administrator, his sole assign, his sole residuary legatee, his sole friend, and sole mourner. And even Scrooge was not so dreadfully cut up by the sad event, but that he was an excellent man of business on the very day of the funeral, and solemnised it with an undoubted bargain.</p>
             <p>The mention of Marley’s funeral brings me back to the point I started from. There is no doubt that Marley was dead. This must be distinctly understood, or nothing wonderful can come of the story I am going to relate. If we were not perfectly convinced that Hamlet’s Father died before the play began, there would be nothing more remarkable in his taking a stroll at night, in an easterly wind, upon his own ramparts, than there would be in any other middle-aged gentleman rashly turning out after dark in a breezy spot—say Saint Paul’s Churchyard for instance—literally to astonish his son’s weak mind.</p>
             <p>Scrooge never painted out Old Marley’s name. There it stood, years afterwards, above the warehouse door: Scrooge and Marley. The firm was known as Scrooge and Marley. Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names. It was all the same to him.</p>
+          
+            <div class="openBtn">
+              <button type="button" class="btn btn-lg btn-danger openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button>
+              <!-- <button class="openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button> -->
+              <!-- <button onclick="window.location.href='articles.html';" id="ios" type="button" class="btn btn-lg btn-danger" > SUBSCRIBE TO READ MORE </button> -->
+            </div>
+            <div class="loginPopup">
+              <div class="formPopup" id="popupForm">
+                <form action="/action_page.php" class="formContainer">
+                  <h2>Newsletter</h2>
+                  <label for="email">
+                    <strong>Subscribe to to keep up to date on the latest travel information.</strong>
+                  </label>
+                  <input type="text" id="email" placeholder="Your Email" name="email" required>
+                  <button type="submit" class="btn">Subscribe</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+            </div>
+          
           </article>
         </aside>
       </article>
       </div>
 
-      <div class="openBtn">
-        <button type="button" class="btn btn-lg btn-danger openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button>
-        <!-- <button class="openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button> -->
-        <!-- <button onclick="window.location.href='articles.html';" id="ios" type="button" class="btn btn-lg btn-danger" > SUBSCRIBE TO READ MORE </button> -->
-      </div>
-      <div class="loginPopup">
-        <div class="formPopup" id="popupForm">
-          <form action="/action_page.php" class="formContainer">
-            <h2>Newsletter</h2>
-            <label for="email">
-              <strong>Subscribe to to keep up to date on the latest travel information.</strong>
-            </label>
-            <input type="text" id="email" placeholder="Your Email" name="email" required>
-            <button type="submit" class="btn">Subscribe</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-          </form>
-        </div>
-      </div>
       
       <style>
       @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
@@ -391,7 +395,8 @@
             
       @media (min-width: 1200px) {
         .article-header {
-          height: 100vh;
+          /* height: 100vh; */
+          height: 100%;
           width: 50vw;
         }
         .article-header-text {
@@ -467,7 +472,7 @@
   
       @media (min-width: 1200px) {
         .article-text-lead {
-          padding: 2rem 0 5rem 3rem
+          padding: 2rem 0 2rem 3rem
         }
       }
           

@@ -133,6 +133,195 @@
         <!-- second article, js should do the work -->
 
       </div>
+
+      <!-- subscribe form popup and blur -->
+
+      <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="/action_page.php" class="formContainer">
+            <h2>End of the road!</h2>
+            <label for="email">
+              <strong>Subscribe to have access to all our premium content.</strong>
+            </label>
+            <!-- <input type="text" id="email" placeholder="Your Email" name="email" required> -->
+            <button type="submit" class="btn">Subscribe</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+      
+      <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
+        
+      body, html {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        background-color: #F9F9F9;
+        /* color: #1b1e23; */
+      }
+
+      .formContainer {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin-top: -205px;
+        background-color: #1b1e23e7;
+      }
+
+      form {
+        width: 100%;
+        margin: 0;
+        padding: auto auto;
+      }
+
+      .formPopup {
+        width: 100%;
+        height: 100%;
+      }
+
+      #app {
+        color: #1b1e23;
+      }
+  
+      .article-header {
+          /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/blake-cheek-631519-unsplash_resized.jpg); */
+          background-image: url(../images/art1.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 60vh;
+          position: relative;
+        }
+  
+        .article-header-text h1, .article-header-text h2 {
+          color: white
+        }
+      
+      @media (min-width: 1200px) {
+        #app {
+          display: flex;
+        }
+          
+        @supports (display: grid) {
+          #app {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+          
+      @media (min-width: 600px) {
+        .article-header {
+          height: 80vh;
+        }
+      }
+            
+      @media (min-width: 1200px) {
+        .article-header {
+          height: 100vh;
+          width: 50vw;
+        }
+        .article-header-text {
+          background-position: absolute;
+          padding-top: 1rem;
+          padding-right: 1rem;
+          text-align: right;
+          max-width: 40%;
+          }
+  
+      }
+             
+      @media (min-width: 600px) {
+        .article-header-text {
+          max-width: 70%;
+        }
+        .article-header-title {
+          text-transform: uppercase;
+          font-size: 2rem;
+          line-height: 1;
+          margin-bottom: 0;
+        }
+      }
+          
+      @media (min-width: 600px) {
+        .article-header-title {
+          font-size: 5.25rem;
+        }
+        .article-header-byline {
+          font-weight: 400;
+          font-size: .9rem;
+        }
+      }
+        
+      @media (min-width: 600px) {
+        .article-header-byline {
+          font-size: 1.5rem;
+        }
+        .article-text {
+          padding: 1rem;
+          max-width: 650px;
+          margin: auto;
+        }
+          
+        .article-text-lead {
+          padding: 2rem 1rem;
+        }
+        .article-text-lead h3 {
+            font-weight: 300;
+            text-align: center;
+            margin: 0;
+            line-height: 1.5;
+          }
+      }
+      @media (min-width: 600px) {
+        .article-text-lead h3 {
+          text-align: right;
+          font-size: 1.5rem;
+        }
+      }
+        
+      @media (min-width: 1200px) {
+        .article-text-lead h3 {
+          font-size: 1.1rem
+        }
+      }
+  
+      @media (min-width: 600px) {
+        .article-text-lead {
+          padding: 3rem 0 3rem 2rem  
+        }
+      }
+  
+      @media (min-width: 1200px) {
+        .article-text-lead {
+          padding: 2rem 0 5rem 3rem
+        }
+      }
+          
+      @media (min-width: 600px) {
+        .article-text-content {
+          columns: 2;
+          column-width: 300px;
+        }
+        .article-text-content p {
+            margin-top: 0;
+        }
+        .article-header-text h1, .article-header-text h2 {
+          color: white
+        }
+      }
+          
+      @media (min-width: 1200px) {
+        .article-text-content {
+          columns: 3;
+          column-width: 100px;
+        } 
+          p {
+            font-size: .95rem;
+          }
+        }
+      </style>
+
     </section>
 
     <!-- Footer -->
