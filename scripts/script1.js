@@ -26,7 +26,7 @@ function articlesCreator(i) {
   divmain.className = "row articles-row " + i;
   // inside it create div with class "col-lg-3 articles-img"
   var divimg = document.createElement('div');
-  divimg.className = "col-lg-3 articles-img";
+  divimg.className = "col-lg-4 articles-img";
   // inside it create insert image with src from JSON
   var imgmain = document.createElement('img');
   imgmain.src = articles_JSON_object.destinations[i].destinationImg;

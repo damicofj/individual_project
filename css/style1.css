@@ -764,16 +764,23 @@ body {
   background-color: white; 
   color: black; 
   border: 2px solid #99999979;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   margin: 0;
 }
 
+#articles-div .articles-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #articles-div .articles-img img {
-  width: 100%; 
-  max-width: 200px;
+  width: 100%;
+  max-width: 500px;
 }
 
 #articles-div .articles-text h3 {
   padding: 0 0 1rem 0;
+  font-size: 2.5rem;
 }
 
