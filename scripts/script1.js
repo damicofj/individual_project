@@ -42,8 +42,8 @@ function articlesCreator(i) {
   var pmain = document.createElement('p');
   pmain.innerText = articles_JSON_object.destinations[i].destinationData;
   var btnmain = document.createElement('button');
-  btnmain.className = "btn btn-danger";
-  btnmain.innerText = "Read More"; 
+  btnmain.className = "btn btn-danger articles-text-btn";
+  btnmain.innerText = "READ MORE"; 
   btnmain.setAttribute("onclick", articles_JSON_object.destinations[i].destinationBtn);
   
   divtext.appendChild(h3main);
