@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Blog about mechanical problems and solutions, tutorials, tips to buy a car, etc -->
-
   <!-- HEAD STARTS -->
   <head>
     <!-- Required meta tags -->
@@ -52,7 +49,7 @@
 
     <!-- NAVBAR -->
 
-    <!-- Referenciarte Logo PC/Mobile-->
+    <!-- Logo PC/Mobile-->
     <nav
       class="navbar navbar-expand-md bg-color navbar-dark justify-content-end"
     >
@@ -135,7 +132,7 @@
             <input
               type="text"
               class="form-control"
-              placeholder="Destination: ex. Rome"
+              placeholder="Destination: ex. Milan"
             />
           </div>
           <div class="col-12 col-sm-12 col-md col-lg">
@@ -313,192 +310,23 @@
       <article class="article-text">
         <aside class="article-text-lead">
           <h3>
-            Marley was dead: to begin with. There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner.
+            19 classic things to do in Milan.
           </h3>
           <article class="article-text-content">
-            <p>Marley was dead: to begin with. There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner. Scrooge signed it: and Scrooge’s name was good upon ’Change, for anything he chose to put his hand to. Old Marley was as dead as a door-nail.</p>
-            <p>Mind! I don’t mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. I might have been inclined, myself, to regard a coffin-nail as the deadest piece of ironmongery in the trade. But the wisdom of our ancestors is in the simile; and my unhallowed hands shall not disturb it, or the Country’s done for. You will therefore permit me to repeat, emphatically, that Marley was as dead as a door-nail.</p>
-            <p>Scrooge knew he was dead? Of course he did. How could it be otherwise? Scrooge and he were partners for I don’t know how many years. Scrooge was his sole executor, his sole administrator, his sole assign, his sole residuary legatee, his sole friend, and sole mourner. And even Scrooge was not so dreadfully cut up by the sad event, but that he was an excellent man of business on the very day of the funeral, and solemnised it with an undoubted bargain.</p>
-            <p>The mention of Marley’s funeral brings me back to the point I started from. There is no doubt that Marley was dead. This must be distinctly understood, or nothing wonderful can come of the story I am going to relate. If we were not perfectly convinced that Hamlet’s Father died before the play began, there would be nothing more remarkable in his taking a stroll at night, in an easterly wind, upon his own ramparts, than there would be in any other middle-aged gentleman rashly turning out after dark in a breezy spot—say Saint Paul’s Churchyard for instance—literally to astonish his son’s weak mind.</p>
-            <p>Scrooge never painted out Old Marley’s name. There it stood, years afterwards, above the warehouse door: Scrooge and Marley. The firm was known as Scrooge and Marley. Sometimes people new to the business called Scrooge Scrooge, and sometimes Marley, but he answered to both names. It was all the same to him.</p>
+            <p>Milan is Italy's style capital - known for its grand architecture and fashion credentials. These are some of the best classic things to do in the city, plus a couple of top hotel recommendations.</p>
+            <p><strong>The Duomo:</strong>
+              Milan's magnificent Gothic cathedral is the third biggest church in Europe (after St Peter's in Rome and the cathedral of Seville) and sublimely dominates both the great piazza on which it is located and the city of which it has long been the centre. Five hundred years in the making, it contains 3,500 statues. Its 135 spires can be viewed up close on the roof, accessible by lift or stairs.
+              Address: Piazza del Duomo, Milan, Italy</p>
+            <p><strong>Milan's canals:</strong>
+              Milan used to be thickly webbed with navigli (canals), the arterial trade links to the countryside. Most have sadly disappeared, but the banks of two of the remaining ones, and the basin where they join up, known as Darsena, have in the past two decades become the city's liveliest area for informal drinking, dining, browsing in antique shops or simply strolling by the water. The area is south-west of the centre and within walking distance of Porta Genova on Metro line 2.</p>
           
             <div class="openBtn">
-              <button type="button" class="btn btn-lg btn-danger openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button>
-              <!-- <button class="openButton" onclick="openForm()"><strong>SUBSCRIBE TO READ MORE</strong></button> -->
+              <button type="button" class="btn btn-lg btn-danger openButton" onclick="window.location.href='articles_milan.html'""><strong>READ MORE</strong></button>
+              <!-- <button class="openButton" onclick="openForm()"><strong>READ MORE</strong></button> -->
               <!-- <button onclick="window.location.href='articles.html';" id="ios" type="button" class="btn btn-lg btn-danger" > SUBSCRIBE TO READ MORE </button> -->
             </div>
-            <div class="loginPopup">
-              <div class="formPopup" id="popupForm">
-                <form action="/action_page.php" class="formContainer">
-                  <h2>Newsletter</h2>
-                  <label for="email">
-                    <strong>Subscribe to to keep up to date on the latest travel information.</strong>
-                  </label>
-                  <input type="text" id="email" placeholder="Your Email" name="email" required>
-                  <button type="submit" class="btn">Subscribe</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-              </div>
-            </div>
-          
-          </article>
-        </aside>
-      </article>
-      </div>
 
-      
-      <style>
-      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
-        
-      body, html {
-        font-family: 'Open Sans', sans-serif;
-        margin: 0;
-        background-color: #F9F9F9;
-        /* color: #1b1e23; */
-      }
-
-      #app {
-        color: #1b1e23;
-      }
-  
-      .article-header {
-          /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/blake-cheek-631519-unsplash_resized.jpg); */
-          background-image: url(../images/art1.jpg);
-          background-position: center;
-          background-size: cover;
-          height: 60vh;
-          position: relative;
-        }
-  
-        .article-header-text h1, .article-header-text h2 {
-          color: white
-        }
-      
-      @media (min-width: 1200px) {
-        #app {
-          display: flex;
-        }
-          
-        @supports (display: grid) {
-          #app {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-          }
-        }
-      }
-          
-      @media (min-width: 600px) {
-        .article-header {
-          height: 80vh;
-        }
-      }
             
-      @media (min-width: 1200px) {
-        .article-header {
-          /* height: 100vh; */
-          height: 100%;
-          width: 50vw;
-        }
-        .article-header-text {
-          background-position: absolute;
-          padding-top: 1rem;
-          padding-right: 1rem;
-          text-align: right;
-          max-width: 40%;
-          }
-  
-      }
-             
-      @media (min-width: 600px) {
-        .article-header-text {
-          max-width: 70%;
-        }
-        .article-header-title {
-          text-transform: uppercase;
-          font-size: 2rem;
-          line-height: 1;
-          margin-bottom: 0;
-        }
-      }
-          
-      @media (min-width: 600px) {
-        .article-header-title {
-          font-size: 5.25rem;
-        }
-        .article-header-byline {
-          font-weight: 400;
-          font-size: .9rem;
-        }
-      }
-        
-      @media (min-width: 600px) {
-        .article-header-byline {
-          font-size: 1.5rem;
-        }
-        .article-text {
-          padding: 1rem;
-          max-width: 650px;
-          margin: auto;
-        }
-          
-        .article-text-lead {
-          padding: 2rem 1rem;
-        }
-        .article-text-lead h3 {
-            font-weight: 300;
-            text-align: center;
-            margin: 0;
-            line-height: 1.5;
-          }
-      }
-      @media (min-width: 600px) {
-        .article-text-lead h3 {
-          text-align: right;
-          font-size: 1.5rem;
-        }
-      }
-        
-      @media (min-width: 1200px) {
-        .article-text-lead h3 {
-          font-size: 1.1rem
-        }
-      }
-  
-      @media (min-width: 600px) {
-        .article-text-lead {
-          padding: 3rem 0 3rem 2rem  
-        }
-      }
-  
-      @media (min-width: 1200px) {
-        .article-text-lead {
-          padding: 2rem 0 2rem 3rem
-        }
-      }
-          
-      @media (min-width: 600px) {
-        .article-text-content {
-          columns: 2;
-          column-width: 300px;
-        }
-        .article-text-content p {
-            margin-top: 0;
-        }
-        .article-header-text h1, .article-header-text h2 {
-          color: white
-        }
-      }
-          
-      @media (min-width: 1200px) {
-        .article-text-content {
-          columns: 3;
-          column-width: 100px;
-        } 
-          p {
-            font-size: .95rem;
-          }
-        }
-      </style>
     </section>
 
     <!-- FIN CALL TO ACTION -->
@@ -566,7 +394,7 @@
               src="images/person1.jpg"
               alt="Person 1 profile"
             />
-            <em>Rosario, Santa Fe</em>
+            <em>Rosario, Argentina</em>
           </div>
           <div class="carousel_testimonials carousel-item" alt="Second slide">
             <h4 class="testimonial-text">
@@ -604,7 +432,7 @@
         >
           <!-- LE OCULTÉ LAS FLECHAS PORQUE SE VE MAL EN APPLE, ESTÁN EN LA MISMA POSICIÓN PERO COMENTADAS   -->
           <!-- <span class="carousel-control-prev-icon" aria-hidden="false"></span> -->
-          <span class="sr-only">Anterior</span>
+          <span class="sr-only">Previous</span>
         </a>
 
         <a
@@ -614,7 +442,7 @@
           data-slide="next"
         >
           <!-- <span class="carousel-control-next-icon" aria-hidden="false"></span> -->
-          <span class="sr-only">Siguiente</span>
+          <span class="sr-only">Next</span>
         </a>
       </div>
     </section>
@@ -636,6 +464,202 @@
          Sign Up <i class="fas fa-inbox"></i>
         </button>
       </div>
+
+      <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="/action_page.php" class="formContainer">
+            <h2>Newsletter</h2>
+            <label for="email">
+              <strong>Subscribe to to keep up to date on the latest travel information.</strong>
+            </label>
+            <input type="text" id="email" placeholder="Your Email" name="email" required>
+            <button type="submit" class="btn">Subscribe</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+    
+    </article>
+  </aside>
+</article>
+</div>
+
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
+  
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #F9F9F9;
+  /* color: #1b1e23; */
+}
+
+#app {
+  color: #1b1e23;
+}
+
+.article-header {
+    /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/blake-cheek-631519-unsplash_resized.jpg); */
+    background-image: url(../images/art1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+  }
+
+  .article-header-text h1, .article-header-text h2 {
+    color: white
+  }
+
+@media (min-width: 1200px) {
+  #app {
+    display: flex;
+  }
+    
+  @supports (display: grid) {
+    #app {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+    
+@media (min-width: 600px) {
+  .article-header {
+    height: 80vh;
+  }
+}
+      
+@media (min-width: 1200px) {
+  .article-header {
+    /* height: 100vh; */
+    height: 100%;
+    width: 50vw;
+  }
+  .article-header-text {
+    background-position: absolute;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    text-align: right;
+    max-width: 40%;
+    }
+
+}
+       
+@media (min-width: 600px) {
+  .article-header-text {
+    max-width: 70%;
+  }
+  .article-header-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+}
+    
+@media (min-width: 600px) {
+  .article-header-title {
+    font-size: 5.25rem;
+  }
+  .article-header-byline {
+    font-weight: 400;
+    font-size: .9rem;
+  }
+}
+  
+@media (min-width: 600px) {
+  .article-header-byline {
+    font-size: 1.5rem;
+  }
+  .article-text {
+    padding: 1rem;
+    max-width: 650px;
+    margin: auto;
+  }
+    
+  .article-text-lead {
+    padding: 2rem 1rem;
+  }
+  .article-text-lead h3 {
+      font-weight: 300;
+      text-align: center;
+      margin: 0;
+      line-height: 1.5;
+    }
+}
+@media (min-width: 600px) {
+  .article-text-lead h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .article-text-lead h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 600px) {
+  .article-text-lead {
+    padding: 3rem 0 3rem 2rem  
+  }
+}
+
+@media (min-width: 1200px) {
+  .article-text-lead {
+    padding: 2rem 0 2rem 3rem
+  }
+}
+    
+@media (min-width: 600px) {
+  .article-text-content {
+    columns: 2;
+    column-width: 300px;
+  }
+  .article-text-content p {
+      margin-top: 0;
+  }
+  .article-header-text h1, .article-header-text h2 {
+    color: white
+  }
+}
+    
+@media (min-width: 1200px) {
+  .article-text-content {
+    columns: 3;
+    column-width: 100px;
+  } 
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+@media (max-width: 600px) {
+  .article-text-lead h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .article-text-lead h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .article-text-content p {
+      margin: 0 1em;
+  }
+  .article-text-content button {
+      margin: 1em 0;
+  }
+}
+    
+</style>
+
     </section>
 
     <!-- Footer -->
@@ -668,9 +692,6 @@
             </p>
             <p>
               <a href="about.html">About Us</a>
-            </p>
-            <p>
-              <a href="legal.html">Legal</a>
             </p>
 
           </div>
@@ -712,7 +733,7 @@
             <!--Copyright-->
             <p class="text-center text-md-left">
               © 2021 Copyright:
-              <a href="https://referenciarte.com/">
+              <a href="#">
                 <strong> www.travelman.com</strong>
               </a>
             </p>
