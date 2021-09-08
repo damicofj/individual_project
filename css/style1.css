@@ -476,7 +476,11 @@ body {
     max-width: 100%;
     margin: auto;
   }
-  
+
+  .row_features_mas_buscados div h3 {
+    color: #f3e5f5;
+  }
+
   .row_features_mas_buscados button {
     color: #1b1e23;
   }
