@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Blog about mechanical problems and solutions, tutorials, tips to buy a car, etc -->
+
   <!-- HEAD STARTS -->
   <head>
     <!-- Required meta tags -->
@@ -74,6 +76,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+        <!-- hamburguer button -->
         <div class="animated-icon2">
           <span></span><span></span><span></span><span></span>
         </div>
@@ -108,13 +111,27 @@
 
   <!-- BODY starts -->
   <body>
-    <!-- articles starts -->
+    <!-- articles options starts -->
     <section id="articles-section">
       <h1 class="title">Destinations</h1>
-      <!-- done with DOM manipulation, check js code -->
+      <div id="articles-div">
+        <!-- first article EXAMPLE HOW IT WAS; NOW DONE WITH DOM MANIPULATION -->
+        <!-- <div class="row articles-row">
+          <div class="col-lg-3 articles-img">
+            <img src="images/d1.jpg" alt="">  
+          </div>
+          <div class="col-lg-8 articles-text">
+            <h3>Destination name</h3>
+            <p>Destination description: Marley was dead: to begin with. There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner. Scrooge signed it: and Scrooge’s name was good upon ’Change, for anything he chose to put his hand to. Old Marley was as dead as a door-nail.</p>
+            <button class="btn btn-danger">Read More</button>
+          </div>
+        </div> -->
+
+        <!-- second article, js should do the work -->
       </div>
 
       <!-- subscribe form popup and blur -->
+
       <div class="loginPopup">
         <div class="formPopup" id="popupForm">
           <form action="/action_page.php" class="formContainer">
@@ -124,6 +141,7 @@
                 >Subscribe to have access to all our premium content.</strong
               >
             </label>
+            <!-- <input type="text" id="email" placeholder="Your Email" name="email" required> -->
             <button type="submit" class="btn">Subscribe</button>
             <button type="button" class="btn cancel" onclick="closeForm()">
               Close
@@ -169,6 +187,7 @@
         }
 
         .article-header {
+          /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/blake-cheek-631519-unsplash_resized.jpg); */
           background-image: url(images/art1.jpg);
           background-position: center;
           background-size: cover;
@@ -441,7 +460,7 @@
     </footer>
     <!-- Footer -->
 
-    <!-- JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -460,6 +479,7 @@
     ></script>
 
     <!-- my JS JavaScript -->
+    <!-- <script type="text/javascript" src="scripts/articles.json"></script> -->
     <script src="scripts/script1.js" charset="utf-8"></script>
 
     <!-- FIN JavaScript -->
