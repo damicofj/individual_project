@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- HEAD STARTS -->
   <head>
     <!-- Required meta tags -->
+    <!-- setting the charstes to utf-8 format -->
     <meta charset="utf-8" />
+    <!-- setting viewport  -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- setting author name -->
     <meta name="author" content="Francisco José D'Amico">
+
     <!-- Favicon -->
-    
     <!-- Chrome and Opera -->
     <link rel="icon" href="images/favicon.ico" />
     <!-- Safari -->
@@ -31,7 +33,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Font -->
+    <!-- Segoe Font -->
     <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
 
     <!-- Handlebars CDN -->
@@ -44,11 +46,11 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style1.css" />
 
     <!-- NAVBAR -->
-
     <!-- Logo PC/Mobile-->
     <nav
       class="navbar navbar-expand-md bg-color navbar-dark justify-content-end"
@@ -59,12 +61,12 @@
           src="images/logo-w2.png"
           width="190"
           height="40"
-          alt=""
+          alt="Logo image from TravelMan with plane in the middle"
           loading="lazy"
         />
       </a>
 
-      <!-- Hamburguer button -->
+      <!-- Hamburguer button animation, works thanks to the js from jqueary file (at the end of the file) -->
       <button
         class="navbar-toggler second-button ml-auto mr-2"
         type="button"
@@ -74,15 +76,18 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+      <!-- hamburguer button -->
         <div class="animated-icon2">
           <span></span><span></span><span></span><span></span>
         </div>
       </button>
 
+      <!-- navbar begins -->
       <div
         class="collapse navbar-collapse flex-grow-0"
         id="navbarSupportedContent"
       >
+      <!-- unordered list for nav links -->
         <ul class="navbar-nav text-left mr-2">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home</a>
@@ -99,163 +104,167 @@
         </ul>
       </div>
     </nav>
-    <!-- end of NAV -->
+    <!-- end of NAV bar -->
 
+    <!-- title that displays the browser on top -->
     <title>TravelMan Magazine - Your travel guide</title>
-    <meta name="description" content="Elegí profesionales con referencias." />
+    <!-- description that displays the browser on the search results -->
+    <meta name="description" content="Your travel guide." />
   </head>
   <!-- end of HEAD -->
 
   <!-- BODY starts -->
   <body>
-
     <!-- Contact Us Section -->
-   <section class="Material-contact-section">
-    <div class="container">
-      <div class="row">
-        <!-- Section Titile -->
-        <div class="col-md-12 wow animated fadeInLeft">
-          <h1 class="section-title contact-title">We would love hearing from you!</h1>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Section Titile -->
-        <div
-          class="col-md-6 mt-3 wow animated fadeInLeft text-left mt-5 mb-auto"
-        >
-          <p>
-            You can contact us by any of these means or leave your message completing the survey.
-            <br />
-            We will answer it as soon as possible.
-          </p>
-
-          <div class="find-widget">
-            Company:
-            <a href="https://travelman.com">TravelMan Corp.</a>
-          </div>
-          <div class="find-widget">
-            Address: <a href="#">Montevideo 3841, Rosario, CP 2000, AR</a>
-          </div>
-          <div class="find-widget">
-            Telephone: <a href="#">+ 54 9 341 2345678</a>
-          </div>
-          <div class="find-widget">
-            Email: <a href="#">info@travelman.com</a>
-          </div>
-
-          <div class="find-widget">
-            Web site:
-            <a href="https://travelman.com">https://travelman.com</a>
-          </div>
-          <div class="find-widget">
-            Hours: <a href="#">Mon to Fri: 08:00 AM - 20:00 PM</a>
+    <section class="Material-contact-section">
+      <div class="container">
+        <div class="row">
+          <!-- Section Title -->
+          <div class="col-md-12 wow animated">
+            <h1 class="section-title contact-title">
+              We would love hearing from you!
+            </h1>
           </div>
         </div>
-        <!-- contact form -->
-        <div class="col-md-6 wow animated fadeInRight text-left">
-          <!-- method="post" -->
-          <form
-            class="shake"
-            role="form"
-            id="contactForm"
-            name="contact-form"
-            data-toggle="validator"
-            action="contact.html"
+        <div class="row">
+          <!-- Left part - information about the company and means of contact -->
+          <div
+            class="col-md-6 mt-3 wow animated text-left mt-5 mb-auto"
           >
-            <!-- Name -->
-            <div class="form-group label-floating">
-              <label class="control-label" for="name">Name</label>
-              <input
-                class="form-control"
-                id="name"
-                type="text"
-                name="name"
-                required
-                data-error="Please enter your name"
-              />
-              <div class="help-block with-errors"></div>
+            <p>
+              You can contact us by any of these means or leave your message
+              completing the survey.
+              <br />
+              We will answer it as soon as possible.
+            </p>
+            
+            <!-- various contact means -->
+            <div class="find-widget">
+              Company:
+              <a href="https://travelman.com">TravelMan Corp.</a>
             </div>
-            <!-- email -->
-            <div class="form-group label-floating">
-              <label class="control-label" for="email">Email</label>
-              <input
-                class="form-control"
-                id="email"
-                type="email"
-                name="email"
-                required
-                data-error="Please enter your email"
-              />
-              <div class="help-block with-errors"></div>
+            <div class="find-widget">
+              Address: <a href="#">Montevideo 3841, Rosario, CP 2000, AR</a>
             </div>
-            <!-- Subject -->
-            <div class="form-group label-floating">
-              <label class="control-label">Subject</label>
-              <input
-                class="form-control"
-                id="msg_subject"
-                type="text"
-                name="subject"
-                required
-                data-error="Please enter your subject"
-              />
-              <div class="help-block with-errors"></div>
+            <div class="find-widget">
+              Telephone: <a href="#">+ 54 9 341 2345678</a>
             </div>
-            <!-- Message -->
-            <div class="form-group label-floating">
-              <label for="message" class="control-label">Message</label>
-              <textarea
-                class="form-control"
-                rows="3"
-                id="message"
-                name="message"
-                required
-                data-error="Please enter your message"
-              ></textarea>
-              <div class="help-block with-errors"></div>
+            <div class="find-widget">
+              Email: <a href="#">info@travelman.com</a>
             </div>
-            <!-- Form Submit -->
-            <div class="form-submit mt-5">
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                id="form-submit"
-              >
-                <i class="material-icons mdi mdi-message-outline"></i> Send Message
-              </button>
-              <div id="msgSubmit" class="h3 text-center hidden"></div>
-              <div class="clearfix"></div>
+
+            <div class="find-widget">
+              Web site:
+              <a href="https://travelman.com">https://travelman.com</a>
             </div>
-          </form>
+            <div class="find-widget">
+              Hours: <a href="#">Mon to Fri: 08:00 AM - 20:00 PM</a>
+            </div>
+          </div>
+          <!-- contact form code -->
+          <div class="col-md-6 wow animated fadeInRight text-left">
+            <!-- method="post" -->
+            <form
+              class="shake"
+              role="form"
+              id="contactForm"
+              name="contact-form"
+              data-toggle="validator"
+              action="contact.html"
+            >
+              <!-- Name -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="name">Name</label>
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  name="name"
+                  required
+                  data-error="Please enter your name"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- email -->
+              <div class="form-group label-floating">
+                <label class="control-label" for="email">Email</label>
+                <!-- when the user does not enter a valid email -->
+                <!-- the data-error message is displayed on screen -->
+                <!-- and when nothing was written in the field and the user pressed submit -->
+                <!-- the 'required' message is displayed on screen -->
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  data-error="Please enter your email"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Subject -->
+              <div class="form-group label-floating">
+                <label class="control-label">Subject</label>
+                <input
+                  class="form-control"
+                  id="msg_subject"
+                  type="text"
+                  name="subject"
+                  required
+                  data-error="Please enter your subject"
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Message -->
+              <div class="form-group label-floating">
+                <label for="message" class="control-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  id="message"
+                  name="message"
+                  required
+                  data-error="Please enter your message"
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <!-- Form Submit -->
+              <div class="form-submit mt-5">
+                <button
+                  class="btn btn-outline-danger"
+                  type="submit"
+                  id="form-submit"
+                >
+                  <i class="material-icons mdi mdi-message-outline"></i> Send
+                  Message
+                </button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4">
-
-      <!-- Footer Links -->
       <div class="container text-center text-md-left">
-        <hr \>
-        <!-- Footer links -->
         <div class="row text-center text-md-left mt-3 pb-3">
-          <!-- Grid column -->
+          <!-- div for link and text, size modified with css bootstrap -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="mb-4">
-              travelman.com
-            </h6>
+            <!-- link to fictious webpage for the magazine -->
+            <h6 class="mb-4">travelman.com</h6>
             <p>
               Choosing has never been easier.
               <br />
               Now you have the knowledge you needed, nothing can stop you.
             </p>
           </div>
-          <!-- Grid column -->
-
+          <!-- horizontal rule for small screens -->
           <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
+          <!-- contact and about us shortcuts -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Info</h6>
             <p>
@@ -264,13 +273,12 @@
             <p>
               <a href="about.html">About Us</a>
             </p>
-
           </div>
-          <!-- Grid column -->
 
+          <!-- horizontal rule for small screens -->
           <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
+          <!-- index and articlets shortcuts -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Shortcuts</h6>
             <p>
@@ -281,46 +289,44 @@
             </p>
           </div>
 
-          <!-- Grid column -->
+          <!-- horizontal rule for small screens -->
           <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
+          <!-- more data about the company -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p><i class="fas fa-home mr-3"></i> Rosario, CP 2000, AR</p>
             <p><i class="fas fa-envelope mr-3"></i> info@travelman.com</p>
             <p><i class="fas fa-phone mr-3"></i> + 54 9 341 2345678</p>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Footer links -->
-
+        <!-- normal horizontal rule -->
         <hr />
-
-        <!-- Grid row -->
         <div class="row d-flex align-items-center">
-          <!-- Grid column -->
           <div class="col-md-7 col-lg-8">
             <!--Copyright-->
             <p class="text-center text-md-left">
               © 2021 Copyright:
+              <!-- a link with href tag -->
               <a href="#">
                 <strong> www.travelman.com</strong>
               </a>
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
+          <!-- Social buttons -->
           <div class="col-md-5 col-lg-4 ml-lg-0">
-            <!-- Social buttons -->
             <div class="text-center text-md-right">
+              <!-- unordered list -->
               <ul class="list-unstyled list-inline">
+                <!-- each li is a link to social apps -->
                 <li class="list-inline-item">
+                  <!-- a tag for the href -->
                   <a
                     class="btn-floating btn-sm rgba-white-slight mx-1"
                     href="#"
                   >
+                    <!-- i for the icon -->
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
@@ -359,11 +365,9 @@
               </ul>
             </div>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
-      <!-- Footer Links -->
+      <!-- Footer Links end -->
     </footer>
     <!-- Footer -->
 
@@ -387,17 +391,7 @@
 
     <!-- my JS JavaScript -->
     <script src="scripts/script1.js" charset="utf-8"></script>
-
-    <!-- FIN JavaScript -->
+    <!-- end of body -->
   </body>
+  <!-- end of HTML document -->
 </html>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  

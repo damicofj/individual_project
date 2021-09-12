@@ -1,28 +1,66 @@
-/**************************************** BY ELEMENT ********************************************** */
+/* CSS */
+/* this CSS document is ordered in the following way:
 
+1. Elements
+
+2. Classes
+
+3. ID
+
+an each of this is ordered alphabetically
+to help a competent coder find their way around
+
+*/
+
+/* BY ELEMENT ********************************************** */
+/* BY ELEMENT ********************************************** */
+/* BY ELEMENT ********************************************** */
+/* BY ELEMENT ********************************************** */
+/* BY ELEMENT ********************************************** */
+
+/* sets the background color to a shade of black and font color to white */
+/* sets the font to familiy Segoe (downloaded with link with googlefonts) */
+/* the first option is Segoe, then bitstream, etc, each following are backup fonts in case the previous one fail */
 body {
   background-color: #1b1e23;
   color: white;
   font-family: "Segoe UI", "Bitstream Vera Sans", "DejaVu Sans", "Trebuchet MS",
     Verdana, "Verdana Ref", sans-serif;
   text-align: center;
+  font-size: 16px;
 }
 
+/* to modify font size in articles_milan page */
+body.normal {
+  font-size: 16px;
+}
+body.big {
+  font-size: 36px;
+}
+body.small {
+  font-size: 12px;
+}
+
+/* adding padding to all the sides of all forms */
 form {
   padding: 10px;
   margin: 0 0 0 0;
 }
 
+/* setting footer colors the same as body */
 footer {
   background-color: white;
   color: #1b1e23;
 }
 
+/* setting footer a tags color */
 footer a {
   color: #1b1e23;
 
 }
 
+/* all h1 tags margin and padding 0
+font size 3rem in bold */
 h1 {
   margin: 0;
   padding: 0;
@@ -30,33 +68,25 @@ h1 {
   font-weight: bold;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 6vw;
-}
-
+/* media tags are needed to modify elements in certain screen size 
+the ones we wish for
+in this case we set h3 font size to screen sizes with width bigger than 500px*/
 @media screen and (min-width: 500px) {
   h3 {
-    font-size: 28px;
+    font-size: 2rem;
   }
 }
 
+/* setting all input elements margin bottom to 9px */
 input {
   margin: 0 0 9px 0;
 }
 
-img[alt="iphone-mockup"] {
-  width: 60%;
-  max-width: 300px;
-}
-
-img[alt="profesionales-mockup"] {
-  background-color: #1b1e23;
-  width: 100%;
-}
-
-/**************************************** BY CLASS ********************************************** */
+/* BY CLASS ********************************************** */
+/* BY CLASS ********************************************** */
+/* BY CLASS ********************************************** */
+/* BY CLASS ********************************************** */
+/* BY CLASS ********************************************** */
 
 * {
   box-sizing: border-box;
@@ -72,13 +102,9 @@ img[alt="profesionales-mockup"] {
   color: #1b1e23;
 }
 
-.animated-icon1 span {
-  background: #e65100;
-}
-
-.animated-icon1 span,
-.animated-icon2 span,
-.animated-icon3 span {
+/* animated icon for hamburguer button */
+/* when pressed, it performs css animation */
+.animated-icon2 span {
   display: block;
   position: absolute;
   height: 3px;
@@ -96,21 +122,7 @@ img[alt="profesionales-mockup"] {
   transition: 0.25s ease-in-out;
 }
 
-.animated-icon1 span:nth-child(1) {
-  top: 0px;
-}
-
-.animated-icon1 span:nth-child(2) {
-  top: 10px;
-}
-
-.animated-icon1 span:nth-child(3) {
-  top: 20px;
-}
-
-.animated-icon1,
-.animated-icon2,
-.animated-icon3 {
+.animated-icon2 {
   width: 30px;
   height: 20px;
   position: relative;
@@ -124,27 +136,6 @@ img[alt="profesionales-mockup"] {
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-}
-
-.animated-icon1.open span:nth-child(1) {
-  top: 11px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-.animated-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-.animated-icon1.open span:nth-child(3) {
-  top: 11px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
 }
 
 .animated-icon2 span {
@@ -190,58 +181,9 @@ img[alt="profesionales-mockup"] {
   left: 50%;
 }
 
-.animated-icon3 span {
-  background: #f3e5f5;
-}
-
-.animated-icon3 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-.animated-icon3 span:nth-child(2) {
-  top: 10px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-.animated-icon3 span:nth-child(3) {
-  top: 20px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-.animated-icon3.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 0px;
-  left: 8px;
-}
-
-.animated-icon3.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-.animated-icon3.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 21px;
-  left: 8px;
-}
-
-
+/* background image for articles-milan.html */
+/* used background cover so it covers all the section */
+/* setting fixed height and position relative */
 .article-header {
   background-image: url(../images/art1.jpg);
   background-position: center;
@@ -275,7 +217,6 @@ img[alt="profesionales-mockup"] {
     text-align: right;
     max-width: 40%;
   }
-
 }
 
 @media (min-width: 600px) {
@@ -404,6 +345,13 @@ img[alt="profesionales-mockup"] {
   margin-bottom: 0.5rem;
 }
 
+/* about from body.html section */
+.body_about {
+  background-color: white; 
+  color: black;
+}
+
+/* shortcut class to set background color with bootstrap style class*/
 .bg-color {
   background-color: #1b1e23;
   color: white;
@@ -423,6 +371,7 @@ img[alt="profesionales-mockup"] {
   color: black;
 }
 
+/* carousel classes */
 .carousel-indicators li {
   background-color: #1b1e23;
 }
@@ -447,7 +396,6 @@ img[alt="profesionales-mockup"] {
   padding: 1%;
 }
 
-
 @media screen and (min-width: 575px) {
   .features-box {
     padding: 1%;
@@ -460,30 +408,27 @@ img[alt="profesionales-mockup"] {
   }
 }
 
-.features-small-item .icon {
-  background-color: white;
-  padding-bottom: 30px;
-}
-
-
-.features-small-item {
+/* team members box from about.html */
+.team-small-item {
   color: #1b1e23;
   font-size: 1.5rem;
   cursor: pointer;
   display: block;
   background: #FFFFFF;
+  /* adds a shadow to the box */
   box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   position: relative;
   margin-bottom: 30px;
+}
+
+.team-small-item .icon {
+  background-color: white;
+  padding-bottom: 30px;
 }
 
 .features_buttons {
@@ -492,14 +437,14 @@ img[alt="profesionales-mockup"] {
   border-color: transparent;
 }
 
-.features_mas_buscados_title {
+.features_popular_title {
   font-weight: bold;
   font-size: 1.7rem;
   margin: 0 0 30px 0;
 }
 
 @media screen and (min-width: 750px) {
-  .features_mas_buscados_title {
+  .features_popular_title {
     font-size: 2rem;
     margin: 50px 0 0 0;
   }
@@ -632,8 +577,22 @@ img[alt="profesionales-mockup"] {
     width: 100%;
   }
 }
+/* lading button, sets it to left for desktop and middle for smartphone and tablets  */
+@media screen and (max-width: 1020px) {
+  .landing_top .title_button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-.left-text p {
+@media screen and (min-width: 1020px) {
+  .landing_top .title_button {
+    padding-left: 50px;
+  }
+}
+
+/* setting font size of the text from about page */
+.right-text p {
   font-size: 1.1rem;
 }
 
@@ -692,13 +651,13 @@ img[alt="profesionales-mockup"] {
   color: white;
 }
 
-.plan_pricing_h3 {
+.landing_newsletter_h3 {
   font-size: 2rem;
   font-style: normal;
   margin: 30px auto 20px auto;
 }
 
-.plan_pricing_p {
+.landing_newsletter_p {
   font-style: normal;
   margin: 0 auto 30px auto;
   max-width: 500px;
@@ -715,35 +674,34 @@ img[alt="profesionales-mockup"] {
   }
 }
 
-.row_features_mas_buscados button {
-  color: #1b1e23;
+.row_features_popular div h3 {
+  color: #f8f9fa;
 }
 
-.row_features_mas_buscados div h3 {
-  color: #f3e5f5;
-}
-
-.row_features_mas_buscados {
+.row_features_popular {
   max-width: 100%;
   margin: auto;
 }
 
-.subtitle_1 {
+/* index page subtitle, for smartphones */
+.subtitle_landing {
   margin: auto;
   opacity: 1;
   padding: 0px 50px 50px 50px;
 }
 
+/* index page subtitle, for tablets */
 @media screen and (max-width: 600px) {
-  .subtitle_1 {
+  .subtitle_landing {
     margin: auto;
     padding: 0px 15px 15px 15px;
     font-size: 1.2rem;
   }
 }
 
+/* index page subtitle, for desktop */
 @media screen and (min-width: 1050px) {
-  .subtitle_1 {
+  .subtitle_landing {
     margin: 0 10px 0 10px;
     text-align: left;
     width: 400px;
@@ -768,46 +726,56 @@ img[alt="profesionales-mockup"] {
   }
 }
 
-.title_1 {
+/* index page title */
+.title_landing {
   max-width: 700px;
-  margin: auto;
+  margin-left: 0px;
   padding: 50px 50px 30px 50px;
 }
 
+/* index page title, for smartphones */
 @media screen and (max-width: 500px) {
-  .title_1 {
-    font-size: 30px;
+  .title_landing {
+    font-size: 2rem;
     margin: auto;
     padding: 80px 30px 25px 30px;
   }
 }
 
+/* index page title, for tablets */
+@media screen and (min-width: 500px) {
+  .title_landing {
+    font-size: 2rem;
+    margin: auto;
+    padding: 90px 60px 25px 60px;
+  }
+}
+
+/* index page title, for tablets */
+@media screen and (min-width: 600px) {
+  .title_landing {
+    font-size: 3rem;
+    margin: auto;
+    padding: 100px 50px 25px 50px;
+  }
+}
+
+/* index page title, for desktop */
 @media screen and (min-width: 1050px) {
-  .title_1 {
-    font-size: 60px;
+  .title_landing {
+    font-size: 4rem;
     margin: 0 10px 0 10px;
     text-align: left;
     width: 500px;
   }
 }
 
-@media screen and (min-width: 500px) {
-  .title_1 {
-    font-size: 30px;
-    margin: auto;
-    padding: 90px 60px 25px 60px;
-  }
-}
+/* BY ID ********************************************** */
+/* BY ID ********************************************** */
+/* BY ID ********************************************** */
+/* BY ID ********************************************** */
+/* BY ID ********************************************** */
 
-@media screen and (min-width: 600px) {
-  .title_1 {
-    font-size: 40px;
-    margin: auto;
-    padding: 100px 50px 25px 50px;
-  }
-}
-
-/**************************************** BY ID ********************************************** */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
 
 #android {
@@ -815,7 +783,7 @@ img[alt="profesionales-mockup"] {
   margin: 0 5px 0 0;
 }
 
-#app {
+#art {
   background-color: #F9F9F9;
   color: #1b1e23;
   font-family: 'Open Sans', sans-serif;
@@ -823,12 +791,12 @@ img[alt="profesionales-mockup"] {
 }
 
 @media (min-width: 1200px) {
-  #app {
+  #art {
     display: flex;
   }
 
   @supports (display: grid) {
-    #app {
+    #art {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -874,15 +842,15 @@ img[alt="profesionales-mockup"] {
   padding: 7% 15%;
 }
 
-#features_mas_buscados {
-  background-color: #1b1e23;
-  color: white;
+/* id from features popular section, sets the font color and padding */
+#features_popular {
+  color: #f8f9fa;
   padding: 1% 1%;
 }
 
 @media screen and (min-width: 400px) {
   #h1_title_2 {
-    font-size: 35px;
+    font-size: 2rem;
   }
 }
 
@@ -900,7 +868,7 @@ img[alt="profesionales-mockup"] {
   background-color: white;
 }
 
-#pricing {
+#landing_newsletter {
   background-color: #1b1e23;
   color: white;
   padding-bottom: 5%;

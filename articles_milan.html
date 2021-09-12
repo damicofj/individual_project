@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- HEAD STARTS -->
   <head>
     <!-- Required meta tags -->
+    <!-- setting the charstes to utf-8 format -->
     <meta charset="utf-8" />
+    <!-- setting viewport  -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="author" content="Francisco José D'Amico" />
-    <!-- Favicon -->
+    <!-- setting author name -->
+    <meta name="author" content="Francisco José D'Amico">
 
+    <!-- Favicon -->
     <!-- Chrome and Opera -->
     <link rel="icon" href="images/favicon.ico" />
     <!-- Safari -->
@@ -31,12 +33,12 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Font -->
-    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet" />
+    <!-- Segoe Font -->
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
 
     <!-- Handlebars CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-
+    
     <!-- Bootstrap CDN -->
     <link
       rel="stylesheet"
@@ -44,6 +46,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style1.css" />
 
@@ -58,12 +61,12 @@
           src="images/logo-w2.png"
           width="190"
           height="40"
-          alt=""
+          alt="Logo image from TravelMan with plane in the middle"
           loading="lazy"
         />
       </a>
 
-      <!-- Hamburguer button -->
+      <!-- Hamburguer button animation, works thanks to the js from jqueary file (at the end of the file) -->
       <button
         class="navbar-toggler second-button ml-auto mr-2"
         type="button"
@@ -73,15 +76,18 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+      <!-- hamburguer button -->
         <div class="animated-icon2">
           <span></span><span></span><span></span><span></span>
         </div>
       </button>
 
+      <!-- navbar begins -->
       <div
         class="collapse navbar-collapse flex-grow-0"
         id="navbarSupportedContent"
       >
+      <!-- unordered list for nav links -->
         <ul class="navbar-nav text-left mr-2">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home</a>
@@ -95,31 +101,49 @@
           <li class="nav-item active">
             <a class="nav-link" href="about.html">About Us</a>
           </li>
+
+          <!-- to modify font size of this text -->
+          <!-- function at the end -->
+          <li>
+            <button class="btn btn-light js-font" data-size="small">-</button>
+            <button class="btn btn-light js-font" data-size="normal">
+              <i class="fas fa-font"></i>
+            </button>
+            <button class="btn btn-light js-font" data-size="big">+</button>            
+          </li>
         </ul>
       </div>
     </nav>
-    <!-- end of NAV -->
+    <!-- end of NAV bar -->
 
+    <!-- title that displays the browser on top -->
     <title>TravelMan Magazine - Your travel guide</title>
-    <meta name="description" content="Elegí profesionales con referencias." />
+    <!-- description that displays the browser on the search results -->
+    <meta name="description" content="Your travel guide." />
   </head>
   <!-- end of HEAD -->
 
   <!-- BODY starts -->
   <body>
-    <section class="pb-5">
-      <div id="app">
+    <!-- section starts, adding padding bottom with bootstrap -->
+    <section>
+      <!-- article id -->
+      <div id="art">
+        <!-- header of the article starts -->
         <header class="article-header">
           <div class="article-header-text">
+            <!-- title -->
             <h1 class="article-header-title">Milan Highlights</h1>
-
-            <h2 class="article-header-byline">by Francisco J. D'Amico</h2>
+            <!-- subtitle -->
+            <h2 class="article-header-byline">Europe Edition</h2>
           </div>
         </header>
 
         <article class="article-text">
           <aside class="article-text-lead">
+            <!-- article text title -->
             <h3>19 things to do in Milan.</h3>
+            <!-- article text -->
             <article class="article-text-content">
               <p>
                 Milan is Italy's style capital - known for its grand
@@ -128,6 +152,7 @@
                 recommendations.
               </p>
               <p>
+                <!-- we use strong to make that part bold -->
                 <strong>The Duomo:</strong> Milan's magnificent Gothic cathedral
                 is the third biggest church in Europe (after St Peter's in Rome
                 and the cathedral of Seville) and sublimely dominates both the
@@ -177,6 +202,7 @@
         </article>
       </div>
 
+      <!-- open form button (popup that works with js) -->
       <div class="openBtn">
         <button
           type="button"
@@ -186,16 +212,20 @@
           <strong>NEXT ARTICLE: ROME</strong>
         </button>
       </div>
+      <!-- the actual popup that is open when we push the button -->
       <div class="loginPopup">
         <div class="formPopup" id="popupForm">
-          <form action="/action_page.php" class="formContainer">
+          <!-- the action is empty so the pages refreshes when the submit button is pressed -->
+          <form action="" class="formContainer">
             <h2>End of the road!</h2>
             <label for="email">
               <strong
                 >Subscribe to have access to all our premium content.</strong
               >
             </label>
+            <!-- subscribe button -->
             <button type="submit" class="btn">Subscribe</button>
+            <!-- close button -->
             <button type="button" class="btn cancel" onclick="closeForm()">
               Close
             </button>
@@ -203,10 +233,15 @@
         </div>
       </div>
 
+      <!-- style for the article section -->
+      <!-- i decided to add it here so its css does not -->
+      <!-- make conflict with the article css from index page -->
+      <!-- making it easier to code and way less time consuming -->
+
       <style>
         @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
 
-        #app {
+        #art {
           font-family: "Open Sans", sans-serif;
           margin: 0;
           background-color: #f9f9f9;
@@ -214,12 +249,12 @@
         }
 
         @media (min-width: 1200px) {
-          #app {
+          #art {
             display: flex;
           }
 
           @supports (display: grid) {
-            #app {
+            #art {
               display: grid;
               grid-template-columns: 1fr 1fr;
             }
@@ -375,32 +410,30 @@
             margin: 2em 0;
           }
         }
+        .openBtn {
+          background-color: #f9f9f9;
+        }
       </style>
     </section>
 
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4">
-      <!-- Footer Links -->
       <div class="container text-center text-md-left">
-        <!-- Footer links -->
         <div class="row text-center text-md-left mt-3 pb-3">
-          <!-- Grid column -->
+          <!-- div for link and text, size modified with css bootstrap -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="mb-4">
-              <!-- text-uppercase mb-4 font-weight-bold -->
-              travelman.com
-            </h6>
+            <!-- link to fictious webpage for the magazine -->
+            <h6 class="mb-4">travelman.com</h6>
             <p>
               Choosing has never been easier.
               <br />
               Now you have the knowledge you needed, nothing can stop you.
             </p>
           </div>
-          <!-- Grid column -->
-
+          <!-- horizontal rule for small screens -->
           <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
+          <!-- contact and about us shortcuts -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Info</h6>
             <p>
@@ -410,11 +443,11 @@
               <a href="about.html">About Us</a>
             </p>
           </div>
-          <!-- Grid column -->
 
+          <!-- horizontal rule for small screens -->
           <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
+          <!-- index and articlets shortcuts -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Shortcuts</h6>
             <p>
@@ -425,46 +458,44 @@
             </p>
           </div>
 
-          <!-- Grid column -->
+          <!-- horizontal rule for small screens -->
           <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
+          <!-- more data about the company -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p><i class="fas fa-home mr-3"></i> Rosario, CP 2000, AR</p>
             <p><i class="fas fa-envelope mr-3"></i> info@travelman.com</p>
             <p><i class="fas fa-phone mr-3"></i> + 54 9 341 2345678</p>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Footer links -->
-
+        <!-- normal horizontal rule -->
         <hr />
-
-        <!-- Grid row -->
         <div class="row d-flex align-items-center">
-          <!-- Grid column -->
           <div class="col-md-7 col-lg-8">
             <!--Copyright-->
             <p class="text-center text-md-left">
               © 2021 Copyright:
+              <!-- a link with href tag -->
               <a href="#">
                 <strong> www.travelman.com</strong>
               </a>
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
+          <!-- Social buttons -->
           <div class="col-md-5 col-lg-4 ml-lg-0">
-            <!-- Social buttons -->
             <div class="text-center text-md-right">
+              <!-- unordered list -->
               <ul class="list-unstyled list-inline">
+                <!-- each li is a link to social apps -->
                 <li class="list-inline-item">
+                  <!-- a tag for the href -->
                   <a
                     class="btn-floating btn-sm rgba-white-slight mx-1"
                     href="#"
                   >
+                    <!-- i for the icon -->
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
@@ -503,11 +534,9 @@
               </ul>
             </div>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
-      <!-- Footer Links -->
+      <!-- Footer Links end -->
     </footer>
     <!-- Footer -->
 
@@ -530,9 +559,20 @@
     ></script>
 
     <!-- my JS JavaScript -->
-
     <script src="scripts/script1.js" charset="utf-8"></script>
+    <!-- end of body -->
 
-    <!-- FIN JavaScript -->
+    <!-- font size modifier function -->
+    <script type="text/javascript">
+      $(function() {
+
+        $('.js-font').on('click', function() {
+            $('body')
+                .attr('class', '')
+                .addClass($(this).data('size'));
+        });
+      });
+    </script>
   </body>
+  <!-- end of HTML document -->
 </html>

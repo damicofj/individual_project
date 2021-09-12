@@ -1,6 +1,10 @@
+// function to open subscribe form
+// sets css display to block
 function openForm() {
   document.getElementById("popupForm").style.display = "block";
 }
+// function to close subscribe form
+// sets css display to none
 function closeForm() {
   document.getElementById("popupForm").style.display = "none";
 }
@@ -47,6 +51,7 @@ function articlesCreator(i) {
     articles_JSON_object.destinations[i].destinationBtn
   );
 
+  // appends the final results to divtext
   divtext.appendChild(h3main);
   divtext.appendChild(pmain);
   divtext.appendChild(btnmain);
@@ -57,12 +62,15 @@ function articlesCreator(i) {
   // appends each div created to our articles-div
   var art = document.getElementById("articles-div");
 
+  // appends the final result to the DOM of the page (to the div precisely)
   art.appendChild(divmain);
 }
 
-// el resto
+// thid piece of code uses the articlesCreator function
+// and appends each article remaining from articles.json 
+// to the articles page
+// after Milan 
 for (var i = 0; i < articles_JSON_object.destinations.length; i++) {
   articlesCreator(i);
 }
 
-// lo podia poner como src del button sino, que iba a ser mucho mas sencillo
