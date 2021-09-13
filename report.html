@@ -1,23 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        body {
+            font-family: -apple-system, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+        }
+    </style>
     <head>
 
     </head>
     <body>
         <!-- Name and student number -->
         <div>
-            <h1>
-                Student: Francisco José D'Amico
-            </h1>
             <h2>
+                Student: Francisco José D'Amico
+                <br>
                 Student number: 210191783
             </h2>
         </div>
 
         <!-- Report material -->
         <div>
+            <h3>Introduction</h3>
+
+            <p>
+                TravelMan Magazine will help travellers from all around the world to choose their next destination. 
+                <br>I was inspired to create this site by looking at some of the existing ones because they were really helpful for me when I travelled to a new destination. The information was displayed in such a comprehensible way and they were so rich and helpful that I decided to do something to help travellers by myself too.
+                <br>I decided that the site would be a magazine because I found them more visually appealing than newspapers, with more visual content and colours.
+                <br><br>The structure consists of:
+                <br>• main/index page, landing page that convinces the user to read more, from there it branches out to the other pages from the menu or with the buttons available all along the page
+                <br>• articles page: where all the articles are shown, it loads them from a JSON file with the DOM and JS
+                <br>• article example page: web page with magazine style, as an example I utilized the city of Milan
+                <br>• contact page: contact form and data about the fictitious brand ‘Travelman’
+                <br>• about us page
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Inspiration
+            </h3>
+            <p>
+                The greatest source of inspiration was a developer called Pieter Levels, founder of nomadlist (https://nomadlist.com/?sort=cost_for_nomad_in_usd&order=asc), and avid writer (one of his articles about independent location workers https://levels.io/the-greatest-migration/), he was the first person that made me rethink how we live and made me realize that I wanted to travel more and live differently, so I consumed a lot of his content.
+                <br>Additionally I found inspirational the website Conde Nast Traveller (https://www.cntraveller.com/), from Conde Nast Media. It was a great resource for me when I was looking for information in the past, and I never forgot how a great font and images can change it all and make their website look significantly better that the others while providing great information. 
+                <br>YouTube creator and Travel blogger - Lost LeBlanc for his great content about travel and adventures(https://www.youtube.com/channel/UCt_NLJ4McJlCyYM-dSPRo7Q) was another source.
+                <br>And last but not least, personal experience on the subject and willingness to learn more about the subject.
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Accessibility
+            </h3>
+            <p>
+                My site is accessible for visually impaired people (blind) thanks for the text reader functionality provided by complete alt text (in images), descriptions and text.
+                <br>It is accessible for the elderly, or people with diminished visual capacity (option to change font size was added on articles page, changes font size of the text of the article - making use of the DOM manipulation), 
+                <br>And last but not least, the color contrast in all the texts related to their background, for clear comprehension and accessibility for the visually impaired or daltonics.
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Usability
+            </h3>
+            <p>
+                As we know, usability is about designing products to be effective, efficient, and satisfying. Usability includes user experience design.
+                <br>I have considered usability in my site in 3 main ways:
+                <br>Intuitive menus and navigation, which in my opinion is one of the most important aspects, makes the user perform the actions they want to accomplish with the minimum possible effort. In this case our users want to have more info about destinations, which is easy to find and to read on our page. 
+                <br>Responsiveness, optimized website for computer and smartphone screens, which is really basic considering that the majority of the traffic comes from mobile.
+                <br>And making use of high definition images for enhanced user experience.
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Things I learnt
+            </h3>
+            <p>
+                1. For the articles page I had to learn how to write and use JSON files, how to parse them with JavaScript, and append them in the DOM with JS as well. I had to read JSON and JavaScript documentation to accomplish this, and some StackOverflow posts from fellow coders that encountered the same difficulties as me.
+
+                <br>2. For the popups, I had to study the JavaScript and CSS documentation to learn to display and hide them completely with buttons, I used parts of different projects (in appendix) and made my own popup that prompts for subscription.
+
+                <br>3. I learnt to add functionality to buttons without the necessity of using a tag inside them (like I previously thought was fine), thanks to button property onclick="window.location.href='’. I learnt this from StackOverflow, when I read that other coders were using this solution to avoid bugs, for example buttons that display badly on iOS when using tags.
+
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Aspects that worked well
+            </h3>
+            <p>
+                The project in general turned out really well, I really enjoyed building the articles page with the DOM manipulation in JavaScript, this because I’ve never done it before and I learnt a lot. I even ended up adding complexity to learn more, this for example with the .json file that hosts all the data for the articles in an organized way.
+                <br>Additionally, I really enjoyed learning to manage big projects successfully, for this I had to learn how to use GitHub and GitBash properly. This is an ability that I am really glad I learnt at this moment.
+
+            </p>
 
         </div>
         
+        <div>
+            <h3>
+                Aspects to improve
+            </h3>
+            <p>
+                I think I could improve my time management skills, that’s the only aspect I would do differently. I aimed for perfection in almost every aspect and spent more time than I should have with this sections. With improved time management I would have prioritized the most important aspects instead of all as equals.
+
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Resources
+                <br>
+                Appendices: Site Map, Wireframes and Mockups
+            </h3>
+
+        </div>
+
+        <div>
+            <h3>Sitemap</h3>
+
+            <img src="images/sitemap.jpg" alt="sitemap" style="max-width: 800px;">
+        </div>
+
+        <div>
+            <h3>
+                Mockups
+            </h3>
+            <img src="images/mockup1.png" alt="mockup image">
+            <img src="images/mockup2.png" alt="mockup image">
+            <img src="images/mockup3.png" alt="mockup image">
+            <br>
+            <img src="images/mockup4.png" alt="mockup image">
+            <img src="images/mockup5.png" alt="mockup image">
+            <img src="images/mockup6.png" alt="mockup image">
+        </div>
+
+        <div>
+            <h3>
+                Wireframes
+            </h3>
+            <iframe src="images/wireframes.pdf" alt="wireframe pdf" width="80%" height="6200px">
+        </div>
+
     </body>
 </html>
